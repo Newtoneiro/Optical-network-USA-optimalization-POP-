@@ -20,7 +20,7 @@ class DataLoader:
             source = demand[0].text
             target = demand[1].text
             value = float(demand[2].text)
-            demands.append(Demand(source, target, value))\
+            demands.append(Demand(source, target, value))
 
         self._nodes = nodes
         self._links = links
