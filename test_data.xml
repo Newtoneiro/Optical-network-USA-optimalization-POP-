@@ -26,8 +26,8 @@
         <demandValue>1770.0</demandValue>
     </demand>
     <demand id="D1">
-        <source>Vancouver</source>
-        <target>SanFrancisco</target>
+        <source>LosAngeles</source>
+        <target>Vancouver</target>
     <demandValue>973.0</demandValue>
     </demand>
 </demands>
