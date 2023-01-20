@@ -63,5 +63,5 @@ class Model:
 
         return shortest_path
 
-    def decreaseCapacity(self, path):
+    def increaseLambdas(self, path):
         pass

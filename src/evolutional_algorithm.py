@@ -24,6 +24,7 @@ class EvolutionalAlgorithm:
         individual = Individual()
 
         for demand in self._model.getDemands():
+            # for now generating single connection
             connections = [self.generateConection(demand)]
 
             individual.appendDemand(
@@ -37,7 +38,7 @@ class EvolutionalAlgorithm:
         path = self._model.getShortestPath(
             demand.source, demand.target
         )
-        self._model.decreaseCapacity(path)
+        self._model.increaseLambdas(path)
 
         transponders = {
             transponder: 0 for transponder
