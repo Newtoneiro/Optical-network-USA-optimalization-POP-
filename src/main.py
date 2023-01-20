@@ -10,6 +10,9 @@ from evolutionalAlgorithm import EvolutionalAlgorithm
 
 if __name__ == "__main__":
     data_loader = DataLoader("janos-us-ca.xml")
-    model = Model(data_loader.get_nodes(), data_loader.get_paths(), data_loader.get_demands())
+    model = Model(
+        data_loader.get_nodes(),
+        data_loader.get_paths(),
+        data_loader.get_demands()
+    )
     EA = EvolutionalAlgorithm(model)
-

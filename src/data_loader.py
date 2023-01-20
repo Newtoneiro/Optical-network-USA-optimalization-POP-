@@ -45,4 +45,3 @@ class DataLoader:
 
     def get_demands(self):
         return self._demands
-

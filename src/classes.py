@@ -1,13 +1,15 @@
 MAX_PATH_CAPACITY = 96
 
+
 class Node:
     def __init__(self, name, x, y):
         self.name = name
         self.x = x
         self.y = y
-    
+
     def __str__(self) -> str:
         return f"{self.name} [x: {self.x}, y: {self.y}]"
+
 
 class Path:
     def __init__(self, source: str, target: str, distance: float) -> None:
