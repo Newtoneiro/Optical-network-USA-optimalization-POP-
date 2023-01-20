@@ -1,6 +1,6 @@
 from data_loader import DataLoader
 from model import Model
-from evolutionalAlgorithm import EvolutionalAlgorithm
+from evolutional_algorithm import EvolutionalAlgorithm
 
 # test_nodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
 # test_paths = [Path('a', 'b'), Path('b', 'c'), Path('b', 'e'), Path('b', 'f'), Path('c', 'g'),
