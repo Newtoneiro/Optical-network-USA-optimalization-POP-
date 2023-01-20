@@ -67,7 +67,7 @@ class Individual:
     def __init__(self):
         pass
 
-    def appendConnection(self, demand_id: str, connections: list[Connection]):
+    def appendDemand(self, demand_id: str, connections: list[Connection]):
         self.content[demand_id] = []
         for connection in connections:
             self.content[demand_id].append(connection)
