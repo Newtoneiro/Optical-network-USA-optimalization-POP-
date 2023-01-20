@@ -15,4 +15,8 @@ if __name__ == "__main__":
         data_loader.get_paths(),
         data_loader.get_demands()
     )
-    EA = EvolutionalAlgorithm(model)
+    ea = EvolutionalAlgorithm(model)
+
+    demand = ea._model._demands[0]
+    print(demand)
+    print(ea.generateConections(demand))

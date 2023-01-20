@@ -41,7 +41,7 @@ class Demand:
 class Connection:
     '''path + used transponders'''
 
-    def __init__(self, path: list[Node], tranponders: list[int]):
+    def __init__(self, path: list[Node], tranponders: dict[int]):
         self.path = path
         self.transponders = tranponders
 
@@ -50,9 +50,9 @@ class Connection:
 
     def getCost(self) -> int:
         return (
-            self.transponders[0] * COST_100G +
-            self.transponders[1] * COST_200G +
-            self.transponders[2] * COST_400G
+            self.transponders["100"] * COST_100G +
+            self.transponders["200"] * COST_200G +
+            self.transponders["400"] * COST_400G
         )
 
 

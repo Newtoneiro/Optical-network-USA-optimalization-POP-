@@ -62,3 +62,6 @@ class Model:
         shortest_path.reverse()
 
         return shortest_path
+
+    def decreaseCapacity(self, path):
+        pass

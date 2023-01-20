@@ -1,4 +1,8 @@
-from classes import Individual
+from classes import Individual, Demand, Connection
+import random
+
+
+TRANSPONDERS = [100, 200, 400]
 
 
 class EvolutionalAlgorithm:
@@ -6,7 +10,7 @@ class EvolutionalAlgorithm:
     def __init__(self, model):
         self._model = model
 
-        self.population = self.generateBasePopulation()
+        # self.population = self.generateBasePopulation()
 
     def generateBasePopulation(
         self, size: int
@@ -20,8 +24,7 @@ class EvolutionalAlgorithm:
         individual = Individual()
 
         for demand in self._model.getDemands():
-            # TODO:
-            connections = None
+            connections = [self.generateConection(demand)]
 
             individual.appendDemand(
                 demand_id=demand.id,
@@ -29,3 +32,21 @@ class EvolutionalAlgorithm:
             )
 
         return individual
+
+    def generateConection(self, demand: Demand):
+        path = self._model.getShortestPath(
+            demand.source, demand.target
+        )
+        self._model.decreaseCapacity(path)
+
+        transponders = {
+            transponder: 0 for transponder
+            in TRANSPONDERS
+        }
+        value = demand.value
+        while value > 0:
+            transponder = random.choice(TRANSPONDERS)
+            transponders[transponder] += 1
+            value -= transponder
+
+        return Connection(path, transponders)
