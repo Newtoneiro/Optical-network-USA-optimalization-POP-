@@ -11,15 +11,19 @@ class EvolutionalAlgorithm:
     """
     def __init__(self, baseModel: Model) -> None:
         self._baseModel = baseModel
-        self.population = self.generateBasePopulation(5)
+        
+        self.generateBasePopulation(5)
 
-    def generateBasePopulation(self, size: int) -> list[Individual]:
+    def generateBasePopulation(self, size: int):
         """
         Initializes base population
         """
-        return [self.generateRandomIndividual() for _ in range(size)]
+        self.population = [] 
+        for _ in range(size):
+            individual = self.generateRandomIndividual()
+            self.population.append(copy.deepcopy(individual))
 
-    def generateRandomIndividual(self) -> None:
+    def generateRandomIndividual(self) -> Individual:
         """
         Initializes single individual in population
         """
@@ -29,7 +33,6 @@ class EvolutionalAlgorithm:
         for demand in individualModel.getDemands():
             # for now generating single connection
             genome = self.generateDemandFullfilment(demand, individualModel)
-
             individual.appendDemand(
                 demand_id=demand.id,
                 genome=genome
@@ -43,8 +46,6 @@ class EvolutionalAlgorithm:
         """
         value = demand.value
         genome = []
-        if (demand.id == "LosAngeles-LasVegas"):
-            print('dupa')
 
         while value > 0:
             path = model.getShortestAvailablePath(demand.source, demand.target)

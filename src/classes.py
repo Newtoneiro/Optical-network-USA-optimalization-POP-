@@ -56,9 +56,9 @@ class Individual:
         pass
 
     def appendDemand(self, demand_id: str, genome: list):
-        self.content[demand_id] = []
-        for gene in genome:
-            self.content[demand_id].append(gene)
+        if (demand_id == "Vancouver-LosAngeles"):
+            print(genome)
+        self.content[demand_id] = genome
 
     def getCost(self) -> int:
         return sum(
