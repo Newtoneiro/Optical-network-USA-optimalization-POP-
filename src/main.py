@@ -18,7 +18,7 @@ if __name__ == "__main__":
         data_loader.get_paths(),
         data_loader.get_demands(),
     )
-    ea = EvolutionalAlgorithm(model, size=2)
+    ea = EvolutionalAlgorithm(model, size=10)
     for individual in ea.population:
         print(individual.content["Vancouver-LosAngeles"])
         print(individual.get_cost())
