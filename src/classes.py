@@ -78,7 +78,7 @@ class Individual:
 
                 for value in transponders.values():
                     cost_lambdas += value
-        
+
         cost_lambdas *= COST_LAMBDA
 
         return cost_transpondesrs + cost_lambdas

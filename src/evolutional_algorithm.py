@@ -12,7 +12,9 @@ class EvolutionalAlgorithm:
     populations and perform the evolution
     """
 
-    def __init__(self, baseModel: Model, demands: list[Demand], size: int) -> None:
+    def __init__(
+        self, baseModel: Model, demands: list[Demand], size: int
+    ) -> None:
         self.base_model = baseModel
         self.demands = demands
         self.population = self.generate_base_population(size)
