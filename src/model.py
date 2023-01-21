@@ -11,14 +11,10 @@ class Model:
     """
 
     def __init__(
-        self, nodes: list[Node], paths: list[Path], demands: list[Demand]
+        self, nodes: list[Node], paths: list[Path]
     ) -> None:
         self._nodes = nodes
         self._paths = paths
-        self._demands = demands
-
-    def get_demands(self) -> list[Demand]:
-        return self._demands
 
     def findAllPaths(self, start):
         """

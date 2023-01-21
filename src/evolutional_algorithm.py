@@ -12,8 +12,9 @@ class EvolutionalAlgorithm:
     populations and perform the evolution
     """
 
-    def __init__(self, baseModel: Model, size: int) -> None:
+    def __init__(self, baseModel: Model, demands: list[Demand], size: int) -> None:
         self.base_model = baseModel
+        self.demands = demands
         self.population = self.generate_base_population(size)
 
     def generate_base_population(self, size: int) -> list[Individual]:
@@ -34,7 +35,7 @@ class EvolutionalAlgorithm:
         individualModel = copy.deepcopy(self.base_model)
         individual = Individual()
 
-        for demand in individualModel.get_demands():
+        for demand in self.demands:
             # for now generating single connection
             genome = self.generate_demand_fullfilment(demand, individualModel)
             individual.append_demand(
