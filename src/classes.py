@@ -1,4 +1,5 @@
-from config.config import *
+from config.config import MAX_PATH_CAPACITY
+
 
 class Node:
     def __init__(self, name, x, y):
@@ -16,7 +17,7 @@ class Path:
         self._target = target
         self._distance = distance
         self._capacity = 0
-    
+
     def getAvailableCapacity(self):
         return MAX_PATH_CAPACITY - self._capacity
 
@@ -45,10 +46,10 @@ class Demand:
 
 
 class Individual:
-    '''
+    """
     Single solution defined as dictionary of lists of
     "Connection" class objects
-    '''
+    """
 
     def __init__(self):
         self.content = {}

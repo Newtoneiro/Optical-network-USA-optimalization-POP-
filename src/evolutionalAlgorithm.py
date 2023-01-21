@@ -1,32 +1,36 @@
 from classes import Individual, Demand
 from model import Model
-from config.config import *
+from config.config import TRANSPONDERS
 import random
 import copy
 
+
 class EvolutionalAlgorithm:
     """
-    This is the abstract class representing evolutional algorithm, it makes it easier to manage
+    This is the abstract class representing evolutional
+    algorithm, it makes it easier to manage
     populations and perform the evolution
     """
-    def __init__(self, baseModel: Model) -> None:
-        self._baseModel = baseModel
-        
-        self.generateBasePopulation(5)
 
-    def generateBasePopulation(self, size: int):
+    def __init__(self, baseModel: Model, size: int) -> None:
+        self.base_model = baseModel
+        self.population = self.generateBasePopulation(size)
+
+    def generateBasePopulation(self, size: int) -> list[Individual]:
         """
         Initializes base population
         """
-        self.population = [] 
-        for _ in range(size):
-            individual = self.generateRandomIndividual()
-            self.population.append(copy.deepcopy(individual))
+
+        return [
+            self.generateRandomIndividual()
+            for _ in range(size)
+        ]
 
     def generateRandomIndividual(self) -> Individual:
         """
         Initializes single individual in population
         """
+
         individualModel = copy.deepcopy(self._baseModel)
         individual = Individual()
 
@@ -44,6 +48,7 @@ class EvolutionalAlgorithm:
         """
         Returns proposed demand fullfilment for given demand
         """
+
         value = demand.value
         genome = []
 
@@ -62,7 +67,7 @@ class EvolutionalAlgorithm:
                 maxFreeLambdasInPath -= 1
 
             model.increaseLambdas(path, demandedLambdas)
-            
+
             genome.append((path, transponders))
 
         return genome

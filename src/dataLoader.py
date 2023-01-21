@@ -2,10 +2,13 @@ from classes import Node, Path, Demand
 import xml.etree.ElementTree as ET
 import geopy.distance
 
+
 class DataLoader:
     """
-    This is handle class for getting the data from datafile and transforming it into usefull format
+    This is handle class for getting the data from datafile and
+    transforming it into usefull format
     """
+
     def __init__(self, path: str) -> None:
         tree = ET.parse(path)
         root = tree.getroot()

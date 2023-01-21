@@ -1,10 +1,9 @@
 import unittest
 import sys
 
-sys.path.append("src")
-
-
 from dataLoader import DataLoader
+
+sys.path.append("src")
 
 
 class TestDataLoader(unittest.TestCase):
