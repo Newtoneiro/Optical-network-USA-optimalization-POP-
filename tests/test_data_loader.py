@@ -1,7 +1,7 @@
 import unittest
 import sys
 
-from dataLoader import DataLoader
+from data_loader import DataLoader
 
 sys.path.append("src")
 

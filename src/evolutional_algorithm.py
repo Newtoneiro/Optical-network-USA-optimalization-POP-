@@ -44,7 +44,9 @@ class EvolutionalAlgorithm:
 
         return individual
 
-    def generate_demand_fullfilment(self, demand: Demand, model: Model) -> list:
+    def generate_demand_fullfilment(
+        self, demand: Demand, model: Model
+    ) -> list:
         """
         Returns proposed demand fullfilment for given demand
         """
