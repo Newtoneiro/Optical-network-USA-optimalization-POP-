@@ -1,8 +1,12 @@
-from config.config import MAX_PATH_CAPACITY
+from config.config import (
+    MAX_PATH_CAPACITY,
+    TRANSPONDERS,
+    COST_100G, COST_200G, COST_400G
+)
 
 
 class Node:
-    def __init__(self, name, x, y):
+    def __init__(self, name, x, y) -> None:
         self.name = name
         self.x = x
         self.y = y
@@ -51,16 +55,21 @@ class Individual:
     "Connection" class objects
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.content = {}
 
-    def append_demand(self, demand_id: str, genome: list):
+    def append_demand(self, demand_id: str, genome: list) -> None:
         self.content[demand_id] = genome
 
     def get_cost(self) -> int:
-        return sum(
-            [
-                connection.get_cost()
-                for connection in self.content.values()
-            ]
-        )
+        cost = 0
+        for demand in self.content.values():
+            for connection in demand:
+                transponders = connection[1]
+                transponder = iter(TRANSPONDERS)
+                cost += (
+                    transponders[next(transponder)] * COST_100G +
+                    transponders[next(transponder)] * COST_200G +
+                    transponders[next(transponder)] * COST_400G
+                )
+        return cost
