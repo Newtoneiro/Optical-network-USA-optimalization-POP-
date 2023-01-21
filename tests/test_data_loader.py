@@ -1,10 +1,10 @@
 import unittest
-
 import sys
+
 sys.path.append("src")
 
 
-from data_loader import DataLoader
+from dataLoader import DataLoader
 
 
 class TestDataLoader(unittest.TestCase):
