@@ -16,12 +16,7 @@ if __name__ == "__main__":
         data_loader.get_demands()
     )
     ea = EvolutionalAlgorithm(model)
-    sum = 0
-    actual_capacity = 0
-    for path in model._paths:
-        sum += path._capacity
-        actual_capacity += 96
-    print(f"{sum}/{actual_capacity}")
+    print('chuj')
     # path = model.getShortestAvailablePath('Calgary', 'Denver', 80)
     # model.increaseLambdas(path, 90)
     # path = model.getShortestAvailablePath('Calgary', 'Denver', 80)

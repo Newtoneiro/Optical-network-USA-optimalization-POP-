@@ -2,16 +2,16 @@ from classes import Individual, Demand
 from model import Model
 from config.config import *
 import random
+import copy
 
 class EvolutionalAlgorithm:
     """
     This is the abstract class representing evolutional algorithm, it makes it easier to manage
     populations and perform the evolution
     """
-    def __init__(self, model: Model) -> None:
-        self._model = model
-
-        self.population = self.generateBasePopulation(1)
+    def __init__(self, baseModel: Model) -> None:
+        self._baseModel = baseModel
+        self.population = self.generateBasePopulation(5)
 
     def generateBasePopulation(self, size: int) -> list[Individual]:
         """
@@ -23,11 +23,12 @@ class EvolutionalAlgorithm:
         """
         Initializes single individual in population
         """
+        individualModel = copy.deepcopy(self._baseModel)
         individual = Individual()
 
-        for demand in self._model.getDemands():
+        for demand in individualModel.getDemands():
             # for now generating single connection
-            genome = self.generateDemandFullfilment(demand)
+            genome = self.generateDemandFullfilment(demand, individualModel)
 
             individual.appendDemand(
                 demand_id=demand.id,
@@ -36,16 +37,18 @@ class EvolutionalAlgorithm:
 
         return individual
 
-    def generateDemandFullfilment(self, demand: Demand) -> list:
+    def generateDemandFullfilment(self, demand: Demand, model: Model) -> list:
         """
         Returns proposed demand fullfilment for given demand
         """
         value = demand.value
         genome = []
+        if (demand.id == "LosAngeles-LasVegas"):
+            print('dupa')
 
         while value > 0:
-            path = self._model.getShortestAvailablePath(demand.source, demand.target)
-            maxFreeLambdasInPath = self._model.getMaximumAvailableLambdas(path)
+            path = model.getShortestAvailablePath(demand.source, demand.target)
+            maxFreeLambdasInPath = model.getMaximumAvailableLambdas(path)
             transponders = {
                 transponder: 0 for transponder in TRANSPONDERS
             }
@@ -57,11 +60,8 @@ class EvolutionalAlgorithm:
                 demandedLambdas += 1
                 maxFreeLambdasInPath -= 1
 
-            self._model.increaseLambdas(path, demandedLambdas)
+            model.increaseLambdas(path, demandedLambdas)
             
             genome.append((path, transponders))
-        
-        if len(genome) > 1:
-            print(genome)
 
         return genome
