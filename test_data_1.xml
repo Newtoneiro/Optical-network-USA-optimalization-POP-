@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<network xmlns="http://sndlib.zib.de/network" version="1.0">
+
+<networkStructure>
+    <nodes coordinatesType="geographical">
+        <node id="Vancouver">
+            <coordinates>
+            <x>-123.1</x>
+            <y>49.22</y>
+            </coordinates>
+        </node>
+        <node id="LosAngeles">
+            <coordinates>
+            <x>-118.4</x>
+            <y>33.93</y>
+            </coordinates>
+        </node>
+    </nodes>
+</networkStructure>
+
+<demands>
+    <demand id="D0">
+        <source>Vancouver</source>
+        <target>LosAngeles</target>
+        <demandValue>1770.0</demandValue>
+    </demand>
+    <demand id="D1">
+        <source>LosAngeles</source>
+        <target>Vancouver</target>
+    <demandValue>973.0</demandValue>
+    </demand>
+</demands>
+
+</network>

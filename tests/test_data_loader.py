@@ -3,6 +3,7 @@ import unittest
 import sys
 sys.path.append("src")
 
+
 from data_loader import DataLoader
 
 
@@ -17,12 +18,14 @@ class TestDataLoader(unittest.TestCase):
         self.assertEqual(
             str(data_loader.get_links()[0]), "Vancouver - Calgary"
         )
-    
+
     def test_demands(self):
         data_loader = DataLoader("janos-us-ca.xml")
         self.assertEqual(
-            str(data_loader.get_demands()[0]), "Vancouver - LosAngeles - 1770.0"
+            str(data_loader.get_demands()[0]),
+            "Vancouver - LosAngeles - 1770.0"
         )
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-from classes import *
+from classes import Node, Path, Demand
 import geopy.distance
 
 
@@ -45,4 +45,3 @@ class DataLoader:
 
     def get_demands(self):
         return self._demands
-
