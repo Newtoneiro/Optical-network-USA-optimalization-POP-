@@ -1,4 +1,4 @@
-from data_loader import DataLoader
+from dataLoader import DataLoader
 from model import Model
 from evolutionalAlgorithm import EvolutionalAlgorithm
 

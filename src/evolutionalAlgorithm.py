@@ -1,4 +1,4 @@
-from classes import Individual, Demand, DemandFulfillment
+from classes import Individual, Demand
 from model import Model
 from config.config import *
 import random
@@ -27,18 +27,18 @@ class EvolutionalAlgorithm:
 
         for demand in self._model.getDemands():
             # for now generating single connection
-            connections = [self.generateConection(demand)]
+            genome = self.generateDemandFullfilment(demand)
 
             individual.appendDemand(
                 demand_id=demand.id,
-                connections=connections
+                genome=genome
             )
 
         return individual
 
-    def generateConection(self, demand: Demand) -> DemandFulfillment:
+    def generateDemandFullfilment(self, demand: Demand) -> list:
         """
-        Returns connection instance
+        Returns proposed demand fullfilment for given demand
         """
         value = demand.value
         genome = []
@@ -64,4 +64,4 @@ class EvolutionalAlgorithm:
         if len(genome) > 1:
             print(genome)
 
-        return DemandFulfillment(genome)
+        return genome

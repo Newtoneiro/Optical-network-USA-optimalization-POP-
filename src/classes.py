@@ -44,23 +44,6 @@ class Demand:
         return f"{self.source} - {self.target} - {self.value}"
 
 
-class DemandFulfillment:
-    '''path + used transponders'''
-
-    def __init__(self, genome):
-        self.genome = genome
-
-    def __str__(self) -> str:
-        return f"{self.genome}"
-
-    # def getCost(self) -> int:
-    #     return (
-    #         self.transponders["100"] * COST_100G +
-    #         self.transponders["200"] * COST_200G +
-    #         self.transponders["400"] * COST_400G
-    #     )
-
-
 class Individual:
     '''
     Single solution defined as dictionary of lists of
@@ -72,10 +55,10 @@ class Individual:
     def __init__(self):
         pass
 
-    def appendDemand(self, demand_id: str, connections: list[DemandFulfillment]):
+    def appendDemand(self, demand_id: str, genome: list):
         self.content[demand_id] = []
-        for connection in connections:
-            self.content[demand_id].append(connection)
+        for gene in genome:
+            self.content[demand_id].append(gene)
 
     def getCost(self) -> int:
         return sum(
