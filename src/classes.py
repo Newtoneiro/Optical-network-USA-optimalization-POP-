@@ -25,7 +25,7 @@ class Path:
 
     def matchesSourceAndTarget(self, source, target):
         return self._source == source and self._target == target
-    
+
     def hasAvailableSpace(self, demandedLambdas):
         return self._capacity + demandedLambdas <= MAX_PATH_CAPACITY
 
@@ -50,14 +50,10 @@ class Individual:
     "Connection" class objects
     '''
 
-    content = {}
-
     def __init__(self):
-        pass
+        self.content = {}
 
     def appendDemand(self, demand_id: str, genome: list):
-        if (demand_id == "Vancouver-LosAngeles"):
-            print(genome)
         self.content[demand_id] = genome
 
     def getCost(self) -> int:

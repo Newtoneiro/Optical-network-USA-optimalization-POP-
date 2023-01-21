@@ -18,7 +18,7 @@ if __name__ == "__main__":
     ea = EvolutionalAlgorithm(model)
     for individual in ea.population:
         print(individual.content['Vancouver-LosAngeles'])
-    print('chuj')
+
     # path = model.getShortestAvailablePath('Calgary', 'Denver', 80)
     # model.increaseLambdas(path, 90)
     # path = model.getShortestAvailablePath('Calgary', 'Denver', 80)
