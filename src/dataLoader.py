@@ -14,13 +14,13 @@ class DataLoader:
         root = tree.getroot()
 
         # Get individual cities - Nodes
-        nodesCoordsDict = {}
+        nodes_coords_dict = {}
         nodes = []
         for node in root[0][0]:
             name = node.attrib["id"]
             x = float(node[0][0].text)
             y = float(node[0][1].text)
-            nodesCoordsDict[name] = (y, x)
+            nodes_coords_dict[name] = (y, x)
             nodes.append(Node(name, x, y))
 
         # Get connection between cities - Paths
@@ -28,8 +28,8 @@ class DataLoader:
         for path in root[0][1]:
             source = path[0].text
             target = path[1].text
-            source_coords = nodesCoordsDict[source]
-            target_coords = nodesCoordsDict[target]
+            source_coords = nodes_coords_dict[source]
+            target_coords = nodes_coords_dict[target]
             # Calculate distance between cities
             distance = geopy.distance.geodesic(source_coords, target_coords).km
             paths.append(Path(source, target, distance))
@@ -50,16 +50,19 @@ class DataLoader:
         """
         Nodes getter
         """
+
         return self._nodes
 
     def get_paths(self) -> list[Path]:
         """
         Paths getter
         """
+
         return self._paths
 
     def get_demands(self) -> list[Demand]:
         """
         Demands getter
         """
+
         return self._demands

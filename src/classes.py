@@ -18,16 +18,16 @@ class Path:
         self._distance = distance
         self._capacity = 0
 
-    def getAvailableCapacity(self):
+    def get_available_capacity(self) -> int:
         return MAX_PATH_CAPACITY - self._capacity
 
-    def increaseLambdas(self, lambdas):
+    def increase_lambdas(self, lambdas) -> None:
         self._capacity += lambdas
 
-    def matchesSourceAndTarget(self, source, target):
+    def matches_source_and_target(self, source, target) -> bool:
         return self._source == source and self._target == target
 
-    def hasAvailableSpace(self, demandedLambdas):
+    def has_available_space(self, demandedLambdas) -> bool:
         return self._capacity + demandedLambdas <= MAX_PATH_CAPACITY
 
     def __str__(self) -> str:
@@ -54,13 +54,13 @@ class Individual:
     def __init__(self):
         self.content = {}
 
-    def appendDemand(self, demand_id: str, genome: list):
+    def append_demand(self, demand_id: str, genome: list):
         self.content[demand_id] = genome
 
-    def getCost(self) -> int:
+    def get_cost(self) -> int:
         return sum(
             [
-                connection.getCost()
+                connection.get_cost()
                 for connection in self.content.values()
             ]
         )

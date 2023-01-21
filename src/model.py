@@ -49,7 +49,7 @@ class Model:
                 path for path
                 in self._paths
                 if (cur_node == path._source)
-                and path.getAvailableCapacity() > 0
+                and path.get_available_capacity() > 0
             ]:
                 if (
                     distances[cur_node][0]
@@ -63,7 +63,7 @@ class Model:
 
         return distances
 
-    def getMaximumAvailableLambdas(self, path: list[str]) -> float:
+    def get_maximum_available_lambdas(self, path: list[str]) -> float:
         """
         For path given as a list of city names it returns the maximum
         possible lambda availability in entire path. Let"s say there
@@ -77,13 +77,15 @@ class Model:
             path = next(
                 element for element
                 in self._paths
-                if element.matchesSourceAndTarget(source, target)
+                if element.matches_source_and_target(source, target)
             )
-            if path.getAvailableCapacity() < maxAvailableLambdas:
-                maxAvailableLambdas = path.getAvailableCapacity()
+            if path.get_available_capacity() < maxAvailableLambdas:
+                maxAvailableLambdas = path.get_available_capacity()
         return maxAvailableLambdas
 
-    def getShortestAvailablePath(self, source: str, target: str) -> list[str]:
+    def get_shortest_available_path(
+        self, source: str, target: str
+    ) -> list[str]:
         """
         Using available algorithms and methods
         it calculates the shortest available path
@@ -101,7 +103,7 @@ class Model:
 
         return shortest_path
 
-    def increasePathLambdas(
+    def increase_path_lambdas(
         self, source: str, target: str, lambdas: int
     ) -> None:
         """
@@ -112,11 +114,11 @@ class Model:
         pathToModify = next(
             element for element
             in self._paths
-            if element.matchesSourceAndTarget(source, target)
+            if element.matches_source_and_target(source, target)
         )
-        pathToModify.increaseLambdas(lambdas)
+        pathToModify.increase_lambdas(lambdas)
 
-    def increaseLambdas(self, path: list[str], lambdas: int) -> None:
+    def increase_lambdas(self, path: list[str], lambdas: int) -> None:
         """
         Increases the lambdas capacity for each
         path entity in between nodes in path given
@@ -124,4 +126,4 @@ class Model:
         """
 
         for source, target in zip(path[:-1], path[1:]):
-            self.increasePathLambdas(source, target, lambdas)
+            self.increase_path_lambdas(source, target, lambdas)

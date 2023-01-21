@@ -37,7 +37,7 @@ class EvolutionalAlgorithm:
         for demand in individualModel.getDemands():
             # for now generating single connection
             genome = self.generateDemandFullfilment(demand, individualModel)
-            individual.appendDemand(
+            individual.append_demand(
                 demand_id=demand.id,
                 genome=genome
             )
@@ -53,8 +53,10 @@ class EvolutionalAlgorithm:
         genome = []
 
         while value > 0:
-            path = model.getShortestAvailablePath(demand.source, demand.target)
-            maxFreeLambdasInPath = model.getMaximumAvailableLambdas(path)
+            path = model.get_shortest_available_path(
+                demand.source, demand.target
+            )
+            maxFreeLambdasInPath = model.get_maximum_available_lambdas(path)
             transponders = {
                 transponder: 0 for transponder in TRANSPONDERS
             }
@@ -66,7 +68,7 @@ class EvolutionalAlgorithm:
                 demandedLambdas += 1
                 maxFreeLambdasInPath -= 1
 
-            model.increaseLambdas(path, demandedLambdas)
+            model.increase_lambdas(path, demandedLambdas)
 
             genome.append((path, transponders))
 

@@ -19,9 +19,9 @@ if __name__ == "__main__":
     for individual in ea.population:
         print(individual.content["Vancouver-LosAngeles"])
 
-    # path = model.getShortestAvailablePath("Calgary", "Denver", 80)
-    # model.increaseLambdas(path, 90)
-    # path = model.getShortestAvailablePath("Calgary", "Denver", 80)
+    # path = model.get_shortest_available_path("Calgary", "Denver", 80)
+    # model.increase_lambdas(path, 90)
+    # path = model.get_shortest_available_path("Calgary", "Denver", 80)
     # print(path)
 
     # demand = ea._model._demands[0]
