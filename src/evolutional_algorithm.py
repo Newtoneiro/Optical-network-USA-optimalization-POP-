@@ -3,7 +3,8 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     DEMAND_MUTATION_PROBABILITY,
-    CONNECTION_MUTATION_PROBABILITY
+    CONNECTION_MUTATION_PROBABILITY,
+    TYPE_MUTATION_PROBABILITY
 )
 import random
 import copy
@@ -58,9 +59,12 @@ class EvolutionalAlgorithm:
                 continue
 
             for connection in demand:
+                if random.random() > CONNECTION_MUTATION_PROBABILITY:
+                    continue
+
                 new_transponders = copy.deepcopy(connection[1])
                 for type in TRANSPONDERS:
-                    if random.random() > CONNECTION_MUTATION_PROBABILITY:
+                    if random.random() > TYPE_MUTATION_PROBABILITY:
                         continue
 
                     number = new_transponders[type]
