@@ -66,7 +66,7 @@ class EvolutionalAlgorithm:
                     number = new_transponders[type]
                     if type == 100:
                         if number >= 2:
-                            # 1x100 -> 2x200
+                            # 2x100 -> 1x200
                             new_transponders[100] -= 2
                             new_transponders[200] += 1
                     elif type == 200:
@@ -77,7 +77,7 @@ class EvolutionalAlgorithm:
                                 new_transponders[400] += 1
                         else:
                             if number >= 1:
-                                # 1x200 -> 2x200
+                                # 1x200 -> 2x100
                                 new_transponders[200] -= 1
                                 new_transponders[100] += 2
                     elif type == 400:
