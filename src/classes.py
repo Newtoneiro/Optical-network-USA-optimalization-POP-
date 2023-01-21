@@ -71,8 +71,8 @@ class Individual:
 
                 cost_transponders += sum(
                     [
-                        transponders[transponder] * cost
-                        for transponder, cost
+                        transponders[type] * cost
+                        for type, cost
                         in zip(TRANSPONDERS, TRANSPONDERS_COSTS)
                     ]
                 )

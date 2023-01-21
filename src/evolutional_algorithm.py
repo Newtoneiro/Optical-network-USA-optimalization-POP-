@@ -1,6 +1,10 @@
 from classes import Individual, Demand
 from model import Model
-from config.config import TRANSPONDERS
+from config.config import (
+    TRANSPONDERS,
+    DEMAND_MUTATION_PROBABILITY,
+    CONNECTION_MUTATION_PROBABILITY
+)
 import random
 import copy
 
@@ -46,6 +50,43 @@ class EvolutionalAlgorithm:
             )
 
         return individual
+
+    def mutate_individual(self, individual: Individual) -> Individual:
+        # individualModel = copy.deepcopy(self.base_model)
+        for demand in self.content.values():
+            if random.random() > DEMAND_MUTATION_PROBABILITY:
+                continue
+
+            for connection in demand:
+                new_transponders = copy.deepcopy(connection[1])
+                for type in TRANSPONDERS:
+                    if random.random() > CONNECTION_MUTATION_PROBABILITY:
+                        continue
+
+                    number = new_transponders[type]
+                    if type == 100:
+                        if number >= 2:
+                            # 1x100 -> 2x200
+                            new_transponders[100] -= 2
+                            new_transponders[200] += 1
+                    elif type == 200:
+                        if random.random() > 0.5:
+                            # 2x200 -> 1x400
+                            if number >= 2:
+                                new_transponders[200] -= 2
+                                new_transponders[400] += 1
+                        else:
+                            if number >= 1:
+                                # 1x200 -> 2x200
+                                new_transponders[200] -= 1
+                                new_transponders[100] += 2
+                    elif type == 400:
+                        if number >= 1:
+                            # 1x400 -> 2x200
+                            new_transponders[400] -= 1
+                            new_transponders[200] += 2
+            # TODO: generate paths
+        return None
 
     def generate_demand_fullfilment(
         self, demand: Demand, model: Model
