@@ -22,6 +22,7 @@ class Path:
 
 class Demand:
     def __init__(self, source: str, target: str, value: float) -> None:
+        self.id = f"{source}-{target}"
         self.source = source
         self.target = target
         self.value = value
