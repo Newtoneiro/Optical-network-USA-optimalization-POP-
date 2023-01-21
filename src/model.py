@@ -17,7 +17,7 @@ class Model:
         self._paths = paths
         self._demands = demands
 
-    def getDemands(self) -> list[Demand]:
+    def get_demands(self) -> list[Demand]:
         return self._demands
 
     def findAllPaths(self, start):

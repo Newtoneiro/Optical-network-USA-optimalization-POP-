@@ -14,29 +14,29 @@ class EvolutionalAlgorithm:
 
     def __init__(self, baseModel: Model, size: int) -> None:
         self.base_model = baseModel
-        self.population = self.generateBasePopulation(size)
+        self.population = self.generate_base_population(size)
 
-    def generateBasePopulation(self, size: int) -> list[Individual]:
+    def generate_base_population(self, size: int) -> list[Individual]:
         """
         Initializes base population
         """
 
         return [
-            self.generateRandomIndividual()
+            self.generate_random_individual()
             for _ in range(size)
         ]
 
-    def generateRandomIndividual(self) -> Individual:
+    def generate_random_individual(self) -> Individual:
         """
         Initializes single individual in population
         """
 
-        individualModel = copy.deepcopy(self._baseModel)
+        individualModel = copy.deepcopy(self.base_model)
         individual = Individual()
 
-        for demand in individualModel.getDemands():
+        for demand in individualModel.get_demands():
             # for now generating single connection
-            genome = self.generateDemandFullfilment(demand, individualModel)
+            genome = self.generate_demand_fullfilment(demand, individualModel)
             individual.append_demand(
                 demand_id=demand.id,
                 genome=genome
@@ -44,7 +44,7 @@ class EvolutionalAlgorithm:
 
         return individual
 
-    def generateDemandFullfilment(self, demand: Demand, model: Model) -> list:
+    def generate_demand_fullfilment(self, demand: Demand, model: Model) -> list:
         """
         Returns proposed demand fullfilment for given demand
         """
