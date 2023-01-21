@@ -74,9 +74,9 @@ class EvolutionalAlgorithm:
                             new_transponders[100] -= 2
                             new_transponders[200] += 1
                     elif type == 200:
-                        if random.random() > 0.5:
-                            # 2x200 -> 1x400
+                        if random.random() > 0.5:  # convert to 400 or 100
                             if number >= 2:
+                                # 2x200 -> 1x400
                                 new_transponders[200] -= 2
                                 new_transponders[400] += 1
                         else:
