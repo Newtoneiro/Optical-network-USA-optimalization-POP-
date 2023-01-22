@@ -2,6 +2,7 @@ from classes import Individual, Demand
 from model import Model
 from config.config import (
     TRANSPONDERS,
+    INDIVIDUAL_MUTATION_PROBABILITY,
     DEMAND_MUTATION_PROBABILITY,
     # CONNECTION_MUTATION_PROBABILITY,
     TYPE_MUTATION_PROBABILITY
@@ -51,6 +52,18 @@ class EvolutionalAlgorithm:
             )
 
         return individual
+
+    def mutate_population(self):
+        """
+        Mutate every individual in population
+        with given probability
+        """
+
+        self.population = [
+            self.mutate_individual(individual)
+            for individual in self.population
+            if random.random() < INDIVIDUAL_MUTATION_PROBABILITY
+        ]
 
     def mutate_individual(self, individual: Individual) -> Individual:
         """
