@@ -121,11 +121,13 @@ class EvolutionalAlgorithm:
         return None
 
     def generate_demand_fullfilment(
-        self, demand: Demand, model: Model, available_transponders: map = None
+        self, demand: Demand, model: Model, transponders: map = None
     ) -> list:
         """
         Returns proposed demand fullfilment for given demand
         """
+
+        available_transponders = copy.deepcopy(transponders)
 
         value = demand.value
         if not available_transponders:
