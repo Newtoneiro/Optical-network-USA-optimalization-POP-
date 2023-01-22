@@ -53,8 +53,8 @@ class EvolutionalAlgorithm:
         return individual
 
     def mutate_individual(self, individual: Individual) -> Individual:
-        # individualModel = copy.deepcopy(self.base_model)
-        for demand in self.content.values():
+        individualModel = copy.deepcopy(self.base_model)
+        for demand in individual.content.values():
             if random.random() > DEMAND_MUTATION_PROBABILITY:
                 continue
 
@@ -89,37 +89,62 @@ class EvolutionalAlgorithm:
                             # 1x400 -> 2x200
                             new_transponders[400] -= 1
                             new_transponders[200] += 2
-            # TODO: generate paths
+            # TODO generowanie sciezki
         return None
 
     def generate_demand_fullfilment(
-        self, demand: Demand, model: Model
+        self, demand: Demand, model: Model, available_transponders: map = None
     ) -> list:
         """
         Returns proposed demand fullfilment for given demand
         """
 
         value = demand.value
+        if not available_transponders:
+            available_transponders = self.generate_random_transponders(value)
+        else:
+            assert (sum([key * value for key, value in available_transponders.items()]) >= value)
+
         genome = []
 
-        while value > 0:
+        while any([val > 0 for val in available_transponders.values()]):
             path = model.get_shortest_available_path(
                 demand.source, demand.target
             )
             maxFreeLambdasInPath = model.get_maximum_available_lambdas(path)
-            transponders = {
+            transponders_for_path = {
                 transponder: 0 for transponder in TRANSPONDERS
             }
             demandedLambdas = 0
-            while maxFreeLambdasInPath > 0 and value > 0:
-                transponder = random.choice(TRANSPONDERS)
-                transponders[transponder] += 1
-                value -= transponder
+            while maxFreeLambdasInPath > 0 and any([val > 0 for val in available_transponders.values()]):
+                selected_transponder = random.choice([
+                    transponder_value for transponder_value
+                    in available_transponders.keys()
+                    if available_transponders[transponder_value] > 0])
+
+                available_transponders[selected_transponder] -= 1
+
+                transponders_for_path[selected_transponder] += 1
+                value -= selected_transponder
                 demandedLambdas += 1
                 maxFreeLambdasInPath -= 1
 
             model.increase_lambdas(path, demandedLambdas)
 
-            genome.append((path, transponders))
+            genome.append((path, transponders_for_path))
 
         return genome
+
+    def generate_random_transponders(self, demand_value: float) -> map:
+        """
+        Generates random transponders that fulfill given demand value.
+        """
+        transponders = {
+            transponder: 0 for transponder in TRANSPONDERS
+        }
+        while demand_value > 0:
+            selected_transponder = random.choice(TRANSPONDERS)
+            transponders[selected_transponder] += 1
+            demand_value -= selected_transponder
+        
+        return transponders

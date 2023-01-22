@@ -18,9 +18,11 @@ if __name__ == "__main__":
         data_loader.get_paths()
     )
     ea = EvolutionalAlgorithm(model, data_loader.get_demands(), size=2)
-    for individual in ea.population:
-        print(individual.content["Vancouver-LosAngeles"])
-        print(individual.get_cost())
+    # for individual in ea.population:
+    #     print(individual.content["Vancouver-LosAngeles"])
+    #     print(individual.get_cost())
+    print(ea.population[0].content)
+    ea.mutate_individual(ea.population[0])
 
     # path = model.get_shortest_available_path("Calgary", "Denver", 80)
     # model.increase_lambdas(path, 90)
