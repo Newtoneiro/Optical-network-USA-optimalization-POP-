@@ -19,9 +19,9 @@ class EvolutionalAlgorithm:
     """
 
     def __init__(
-        self, baseModel: Model, demands: list[Demand], size: int
+        self, base_model: Model, demands: list[Demand], size: int
     ) -> None:
-        self.base_model = baseModel
+        self.base_model = base_model
         self.demands = demands
         self.population = self.generate_base_population(size)
 
@@ -55,7 +55,7 @@ class EvolutionalAlgorithm:
 
     def mutate_population(self):
         """
-        Mutate every individual in population
+        Mutates every individual in population
         with given probability
         """
 
@@ -67,7 +67,8 @@ class EvolutionalAlgorithm:
 
     def mutate_individual(self, individual: Individual) -> Individual:
         """
-        Create new indiviudal by mutation
+        Creates new indiviudal by mutating the given one
+        according to a given set of probabilities
         """
 
         mutated_individual = copy.deepcopy(individual)
@@ -133,6 +134,11 @@ class EvolutionalAlgorithm:
         return mutated_individual
 
     def get_demand_by_id(self, id: str) -> Demand | None:
+        """
+        Retruns "Demand" class object from base model
+        that has the same id as given
+        """
+
         for demand in self.demands:
             if demand.id == id:
                 return demand
@@ -161,12 +167,14 @@ class EvolutionalAlgorithm:
             path = model.get_shortest_available_path(
                 demand.source, demand.target
             )
-            maxFreeLambdasInPath = model.get_maximum_available_lambdas(path)
+            max_free_lambdas_in_path = model.get_maximum_available_lambdas(
+                path
+            )
             transponders_for_path = {
                 transponder: 0 for transponder in TRANSPONDERS
             }
             demandedLambdas = 0
-            while maxFreeLambdasInPath > 0 and any([
+            while max_free_lambdas_in_path > 0 and any([
                 val > 0 for val in available_transponders.values()
             ]):
                 selected_transponder = random.choice([
@@ -179,7 +187,7 @@ class EvolutionalAlgorithm:
                 transponders_for_path[selected_transponder] += 1
                 value -= selected_transponder
                 demandedLambdas += 1
-                maxFreeLambdasInPath -= 1
+                max_free_lambdas_in_path -= 1
 
             model.increase_lambdas(path, demandedLambdas)
 
