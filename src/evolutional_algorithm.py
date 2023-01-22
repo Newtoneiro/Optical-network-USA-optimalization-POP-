@@ -199,6 +199,7 @@ class EvolutionalAlgorithm:
         """
         Generates random transponders that fulfill given demand value.
         """
+
         transponders = {
             transponder: 0 for transponder in TRANSPONDERS
         }
