@@ -53,9 +53,14 @@ class EvolutionalAlgorithm:
         return individual
 
     def mutate_individual(self, individual: Individual) -> Individual:
+        """
+        Create new indiviudal by mutation
+        """
+
         mutated_individual = copy.deepcopy(individual)
         mutated_individual_model = copy.deepcopy(self.base_model)
 
+        # mutate tranponders
         for demand_id in mutated_individual.content:
             if random.random() > DEMAND_MUTATION_PROBABILITY:
                 continue
@@ -103,11 +108,11 @@ class EvolutionalAlgorithm:
                         mutated_demand_transponders[400] -= 1
                         mutated_demand_transponders[200] += 2
 
-            demand = self.get_demand_by_id(demand_id)
-
+            # generate new demand fullfilment
             new_demand_ff = self.generate_demand_fullfilment(
-                demand, mutated_individual_model,
-                mutated_demand_transponders
+                demand=self.get_demand_by_id(demand_id),
+                model=mutated_individual_model,
+                transponders=mutated_demand_transponders
             )
 
             mutated_individual.content[demand_id] = new_demand_ff
