@@ -3,7 +3,7 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     DEMAND_MUTATION_PROBABILITY,
-    CONNECTION_MUTATION_PROBABILITY,
+    # CONNECTION_MUTATION_PROBABILITY,
     TYPE_MUTATION_PROBABILITY
 )
 import random
@@ -39,12 +39,12 @@ class EvolutionalAlgorithm:
         Initializes single individual in population
         """
 
-        individualModel = copy.deepcopy(self.base_model)
         individual = Individual()
+        individual_model = copy.deepcopy(self.base_model)
 
         for demand in self.demands:
             # for now generating single connection
-            genome = self.generate_demand_fullfilment(demand, individualModel)
+            genome = self.generate_demand_fullfilment(demand, individual_model)
             individual.append_demand(
                 demand_id=demand.id,
                 genome=genome
@@ -53,43 +53,71 @@ class EvolutionalAlgorithm:
         return individual
 
     def mutate_individual(self, individual: Individual) -> Individual:
-        individualModel = copy.deepcopy(self.base_model)
-        for demand in individual.content.values():
+        mutated_individual = copy.deepcopy(individual)
+        mutated_individual_model = copy.deepcopy(self.base_model)
+
+        for demand_id in mutated_individual.content:
             if random.random() > DEMAND_MUTATION_PROBABILITY:
                 continue
 
-            for connection in demand:
-                if random.random() > CONNECTION_MUTATION_PROBABILITY:
+            demand_transponders = {
+                transponder: 0
+                for transponder
+                in TRANSPONDERS
+            }
+
+            demand_ff = mutated_individual.content[demand_id]
+
+            for connection in demand_ff:
+                connection_transponders = connection[1]
+                for transponder in connection_transponders:
+                    number = connection_transponders[transponder]
+                    demand_transponders[transponder] += number
+
+            mutated_demand_transponders = copy.deepcopy(demand_transponders)
+
+            for type in TRANSPONDERS:
+                if random.random() > TYPE_MUTATION_PROBABILITY:
                     continue
 
-                new_transponders = copy.deepcopy(connection[1])
-                for type in TRANSPONDERS:
-                    if random.random() > TYPE_MUTATION_PROBABILITY:
-                        continue
-
-                    number = new_transponders[type]
-                    if type == 100:
+                number = mutated_demand_transponders[type]
+                if type == 100:
+                    if number >= 2:
+                        # 2x100 -> 1x200
+                        mutated_demand_transponders[100] -= 2
+                        mutated_demand_transponders[200] += 1
+                elif type == 200:
+                    if random.random() > 0.5:  # convert to 400 or 100
                         if number >= 2:
-                            # 2x100 -> 1x200
-                            new_transponders[100] -= 2
-                            new_transponders[200] += 1
-                    elif type == 200:
-                        if random.random() > 0.5:  # convert to 400 or 100
-                            if number >= 2:
-                                # 2x200 -> 1x400
-                                new_transponders[200] -= 2
-                                new_transponders[400] += 1
-                        else:
-                            if number >= 1:
-                                # 1x200 -> 2x100
-                                new_transponders[200] -= 1
-                                new_transponders[100] += 2
-                    elif type == 400:
+                            # 2x200 -> 1x400
+                            mutated_demand_transponders[200] -= 2
+                            mutated_demand_transponders[400] += 1
+                    else:
                         if number >= 1:
-                            # 1x400 -> 2x200
-                            new_transponders[400] -= 1
-                            new_transponders[200] += 2
-            # TODO generowanie sciezki
+                            # 1x200 -> 2x100
+                            mutated_demand_transponders[200] -= 1
+                            mutated_demand_transponders[100] += 2
+                elif type == 400:
+                    if number >= 1:
+                        # 1x400 -> 2x200
+                        mutated_demand_transponders[400] -= 1
+                        mutated_demand_transponders[200] += 2
+
+            demand = self.get_demand_by_id(demand_id)
+
+            new_demand_ff = self.generate_demand_fullfilment(
+                demand, mutated_individual_model,
+                mutated_demand_transponders
+            )
+
+            mutated_individual.content[demand_id] = new_demand_ff
+
+        return mutated_individual
+
+    def get_demand_by_id(self, id: str) -> Demand | None:
+        for demand in self.demands:
+            if demand.id == id:
+                return demand
         return None
 
     def generate_demand_fullfilment(
@@ -103,7 +131,9 @@ class EvolutionalAlgorithm:
         if not available_transponders:
             available_transponders = self.generate_random_transponders(value)
         else:
-            assert (sum([key * value for key, value in available_transponders.items()]) >= value)
+            assert (sum([
+                key * value for key, value in available_transponders.items()
+            ]) >= value)
 
         genome = []
 
@@ -116,7 +146,9 @@ class EvolutionalAlgorithm:
                 transponder: 0 for transponder in TRANSPONDERS
             }
             demandedLambdas = 0
-            while maxFreeLambdasInPath > 0 and any([val > 0 for val in available_transponders.values()]):
+            while maxFreeLambdasInPath > 0 and any([
+                val > 0 for val in available_transponders.values()
+            ]):
                 selected_transponder = random.choice([
                     transponder_value for transponder_value
                     in available_transponders.keys()
@@ -146,5 +178,5 @@ class EvolutionalAlgorithm:
             selected_transponder = random.choice(TRANSPONDERS)
             transponders[selected_transponder] += 1
             demand_value -= selected_transponder
-        
+
         return transponders

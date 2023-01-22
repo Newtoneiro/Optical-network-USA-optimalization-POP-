@@ -21,8 +21,14 @@ if __name__ == "__main__":
     # for individual in ea.population:
     #     print(individual.content["Vancouver-LosAngeles"])
     #     print(individual.get_cost())
-    print(ea.population[0].content)
-    ea.mutate_individual(ea.population[0])
+    # print(ea.population[0].content)
+    # ea.mutate_individual(ea.population[0])
+
+    a = ea.population[0]
+    print(a.content["Vancouver-LosAngeles"][0])
+    a = ea.mutate_individual(a)
+    print()
+    print(a.content["Vancouver-LosAngeles"][0])
 
     # path = model.get_shortest_available_path("Calgary", "Denver", 80)
     # model.increase_lambdas(path, 90)
