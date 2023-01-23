@@ -3,7 +3,7 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     INDIVIDUAL_MUTATION_PROBABILITY,
-    MUTATION_PROBABILITY,
+    DEMAND_MUTATION_PROBABILITY,
     TYPE_MUTATION_PROBABILITY,
     CROSSOVER_PROBABILITY,
     NO_EPOCHS
@@ -154,7 +154,7 @@ class EvolutionalAlgorithm:
 
         # mutate tranponders
         for demand_id in mutated_individual.content:
-            if random.random() > MUTATION_PROBABILITY:
+            if random.random() > DEMAND_MUTATION_PROBABILITY:
                 continue
 
             demand_transponders = mutated_individual.sum_transponders(
