@@ -1,5 +1,5 @@
 import numpy as np
-from classes import Node, Path, Demand
+from classes import Node, Path
 
 
 class Model:

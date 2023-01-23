@@ -1,7 +1,7 @@
 from config.config import (
     MAX_PATH_CAPACITY,
     TRANSPONDERS,
-    COST_100G, COST_200G, COST_400G,
+    TRANSPONDERS_COSTS,
     COST_LAMBDA
 )
 
@@ -63,22 +63,23 @@ class Individual:
         self.content[demand_id] = genome
 
     def get_cost(self) -> int:
-        cost_transpondesrs = 0
+        cost_transponders = 0
         cost_lambdas = 0
         for demand in self.content.values():
             for connection in demand:
                 transponders = connection[1]
-                transponder = iter(TRANSPONDERS)
 
-                cost_transpondesrs += (
-                    transponders[next(transponder)] * COST_100G +
-                    transponders[next(transponder)] * COST_200G +
-                    transponders[next(transponder)] * COST_400G
+                cost_transponders += sum(
+                    [
+                        transponders[type] * cost
+                        for type, cost
+                        in zip(TRANSPONDERS, TRANSPONDERS_COSTS)
+                    ]
                 )
 
                 for value in transponders.values():
                     cost_lambdas += value
-        
+
         cost_lambdas *= COST_LAMBDA
 
-        return cost_transpondesrs + cost_lambdas
+        return cost_transponders + cost_lambdas
