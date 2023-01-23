@@ -75,6 +75,7 @@ class EvolutionalAlgorithm:
         selected_population = self.selection(self.population)
         crossover_population = self.crossover(selected_population)
         mutated_population = self.mutation(crossover_population)
+        # mutated_population = self.mutation(selected_population)
         self.population = mutated_population
 
     def selection(self, population: list[Individual]) -> list[Individual]:
@@ -173,7 +174,7 @@ class EvolutionalAlgorithm:
                         mutated_demand_transponders[100] -= 2
                         mutated_demand_transponders[200] += 1
                 elif type == 200:
-                    continue
+                    # continue
                     if random.random() > 0.5:  # convert to 400 or 100
                         if number >= 2:
                             # 2x200 -> 1x400
@@ -185,7 +186,7 @@ class EvolutionalAlgorithm:
                             mutated_demand_transponders[200] -= 1
                             mutated_demand_transponders[100] += 2
                 elif type == 400:
-                    continue
+                    # continue
                     if number >= 1:
                         # 1x400 -> 2x200
                         mutated_demand_transponders[400] -= 1
