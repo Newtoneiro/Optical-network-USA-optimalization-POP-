@@ -3,7 +3,7 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     INDIVIDUAL_MUTATION_PROBABILITY,
-    MUTATION_PROBABILITY,
+    DEMAND_MUTATION_PROBABILITY,
     TYPE_MUTATION_PROBABILITY,
     CROSSOVER_PROBABILITY,
     NO_EPOCHS
@@ -133,74 +133,43 @@ class EvolutionalAlgorithm:
         Mutates every individual in population
         with given probability
         """
-        mutated_population = [
-            self.mutate_individual(individual)
-            if random.random() < INDIVIDUAL_MUTATION_PROBABILITY
-            else individual
-            for individual in population
-        ]
-
-        return mutated_population
-
-    def mutate_individual(self, individual: Individual) -> Individual:
-        """
-        Creates new indiviudal by mutating the given one
-        according to a given set of probabilities
-        """
-
-        mutated_individual = copy.deepcopy(individual)
-        mutated_individual_model = copy.deepcopy(self.base_model)
-
-        # mutate tranponders
-        for demand_id in mutated_individual.content:
-            if random.random() > MUTATION_PROBABILITY:
+        mutated_population = []
+        for individual in population:
+            if random.random() > INDIVIDUAL_MUTATION_PROBABILITY:
+                mutated_population.append(individual)
                 continue
 
-            demand_transponders = mutated_individual.sum_transponders(
-                demand_id
-            )
-
-            mutated_demand_transponders = copy.deepcopy(demand_transponders)
-
-            for type in TRANSPONDERS:
-                if random.random() > TYPE_MUTATION_PROBABILITY:
-                    continue
-
-                number = mutated_demand_transponders[type]
-                if type == 100:
-                    if number >= 2:
-                        # 2x100 -> 1x200
-                        mutated_demand_transponders[100] -= 2
-                        mutated_demand_transponders[200] += 1
-                elif type == 200:
-                    continue
-                    if random.random() > 0.5:  # convert to 400 or 100
-                        if number >= 2:
-                            # 2x200 -> 1x400
-                            mutated_demand_transponders[200] -= 2
-                            mutated_demand_transponders[400] += 1
+            mutated_individual = Individual()
+            individual_model = copy.deepcopy(self.base_model)
+            for demand_id in [demand.id for demand in self.demands]:
+                demand_transponders = individual.sum_transponders(
+                    demand_id
+                )
+                if random.random() < DEMAND_MUTATION_PROBABILITY:
+                    # If mutation occured, change transponders
+                    transponder_to_change = random.choice(TRANSPONDERS)
+                    transponder_to_change_to = random.choice(
+                        [t for t in TRANSPONDERS if t != transponder_to_change]
+                    )
+                    ratio = transponder_to_change / transponder_to_change_to
+                    if (ratio > 1):
+                        if demand_transponders[transponder_to_change] > 1:
+                            demand_transponders[transponder_to_change] -= 1
+                            demand_transponders[transponder_to_change_to] += ratio
                     else:
-                        if number >= 1:
-                            # 1x200 -> 2x100
-                            mutated_demand_transponders[200] -= 1
-                            mutated_demand_transponders[100] += 2
-                elif type == 400:
-                    continue
-                    if number >= 1:
-                        # 1x400 -> 2x200
-                        mutated_demand_transponders[400] -= 1
-                        mutated_demand_transponders[200] += 2
+                        if demand_transponders[transponder_to_change] > int(1/ratio):
+                            demand_transponders[transponder_to_change] -= int(1/ratio)
+                            demand_transponders[transponder_to_change_to] += 1
 
-            # generate new demand fullfilment
-            new_demand_ff = self.generate_demand_fullfilment(
-                demand=self.get_demand_by_id(demand_id),
-                model=mutated_individual_model,
-                transponders=mutated_demand_transponders
-            )
+                new_genome = self.generate_demand_fullfilment(
+                    demand=self.get_demand_by_id(demand_id),
+                    model=individual_model,
+                    transponders=demand_transponders
+                )
+                mutated_individual.append_demand(demand_id, new_genome)
+            mutated_population.append(mutated_individual)
 
-            mutated_individual.append_demand(demand_id, new_demand_ff)
-
-        return mutated_individual
+        return mutated_population
 
     def get_demand_by_id(self, id: str) -> Demand or None:
         """

@@ -88,7 +88,7 @@ class Individual:
                     [
                         transponders[type] * cost
                         for type, cost
-                        in zip(TRANSPONDERS, TRANSPONDERS_COSTS)
+                        in zip(TRANSPONDERS, TRANSPONDERS_COSTS.values())
                     ]
                 )
 
