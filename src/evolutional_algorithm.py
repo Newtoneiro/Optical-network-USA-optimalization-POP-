@@ -62,9 +62,10 @@ class EvolutionalAlgorithm:
         cur_epoch = 1
         while cur_epoch <= NO_EPOCHS:
             self.step()
-            best_score = \
-                min(self.population, key=lambda a: a.get_cost()).get_cost()
-            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, score: {best_score}")
+            # best_score = \
+            #     min(self.population, key=lambda a: a.get_cost()).get_cost()
+            scores = set([individual.get_cost() for individual in self.population])
+            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, len: {len(self.population)} score: {scores}, best_score: {min(scores)}")
             cur_epoch += 1
 
     def step(self) -> None:
@@ -72,9 +73,10 @@ class EvolutionalAlgorithm:
         Performs selection and mutation for given epoch
         """
         selected_population = self.selection(self.population)
-        mutated_population = self.mutation(selected_population)
+        crossover_population = self.crossover(selected_population)
+        mutated_population = self.mutation(crossover_population)
         self.population = mutated_population
-    
+
     def selection(self, population: list[Individual]) -> list[Individual]:
         """
         Selects individuals for new population using tournament selections
@@ -92,18 +94,38 @@ class EvolutionalAlgorithm:
             else:
                 new_population.append(second_individual)
         return new_population
-    
+
     def crossover(self, population: list[Individual]) -> list[Individual]:
         """
         Does crossover on population
         """
         crossover_population = []
         for individual in population:
-            if random.random() < CROSSOVER_PROBABILITY:
-                pass
-            else:
+            if random.random() > CROSSOVER_PROBABILITY:
                 crossover_population.append(individual)
-        
+                continue
+
+            individual_model = copy.deepcopy(self.base_model)
+            individual_partner = random.choice(population)
+            crossover_individual = Individual()
+            for demand_id in [demand.id for demand in self.demands]:
+                if random.random() < 0.5:
+                    demand_transponders = individual.sum_transponders(
+                        demand_id
+                    )
+                else:
+                    demand_transponders = individual_partner.sum_transponders(
+                        demand_id
+                    )
+                new_genome = self.generate_demand_fullfilment(
+                    demand=self.get_demand_by_id(demand_id),
+                    model=individual_model,
+                    transponders=demand_transponders
+                )
+                crossover_individual.append_demand(demand_id, new_genome)
+
+            crossover_population.append(crossover_individual)
+
         return crossover_population
 
     def mutation(self, population: list[Individual]) -> list[Individual]:
@@ -113,8 +135,9 @@ class EvolutionalAlgorithm:
         """
         mutated_population = [
             self.mutate_individual(individual)
-            for individual in population
             if random.random() < INDIVIDUAL_MUTATION_PROBABILITY
+            else individual
+            for individual in population
         ]
 
         return mutated_population
@@ -133,19 +156,9 @@ class EvolutionalAlgorithm:
             if random.random() > MUTATION_PROBABILITY:
                 continue
 
-            demand_transponders = {
-                transponder: 0
-                for transponder
-                in TRANSPONDERS
-            }
-
-            demand_ff = mutated_individual.content[demand_id]
-
-            for connection in demand_ff:
-                connection_transponders = connection[1]
-                for transponder in connection_transponders:
-                    number = connection_transponders[transponder]
-                    demand_transponders[transponder] += number
+            demand_transponders = mutated_individual.sum_transponders(
+                demand_id
+            )
 
             mutated_demand_transponders = copy.deepcopy(demand_transponders)
 
@@ -160,6 +173,7 @@ class EvolutionalAlgorithm:
                         mutated_demand_transponders[100] -= 2
                         mutated_demand_transponders[200] += 1
                 elif type == 200:
+                    continue
                     if random.random() > 0.5:  # convert to 400 or 100
                         if number >= 2:
                             # 2x200 -> 1x400
@@ -171,6 +185,7 @@ class EvolutionalAlgorithm:
                             mutated_demand_transponders[200] -= 1
                             mutated_demand_transponders[100] += 2
                 elif type == 400:
+                    continue
                     if number >= 1:
                         # 1x400 -> 2x200
                         mutated_demand_transponders[400] -= 1
@@ -183,7 +198,7 @@ class EvolutionalAlgorithm:
                 transponders=mutated_demand_transponders
             )
 
-            mutated_individual.content[demand_id] = new_demand_ff
+            mutated_individual.append_demand(demand_id, new_demand_ff)
 
         return mutated_individual
 

@@ -55,9 +55,24 @@ class Individual:
     Single solution defined as dictionary of lists of
     "Connection" class objects
     """
-
     def __init__(self) -> None:
         self.content = {}
+
+    def sum_transponders(self, demand_id: str) -> dict:
+        demand_transponders = {
+            transponder: 0
+            for transponder
+            in TRANSPONDERS
+        }
+
+        demand_ff = self.content[demand_id]
+
+        for connection in demand_ff:
+            connection_transponders = connection[1]
+            for transponder in connection_transponders:
+                number = connection_transponders[transponder]
+                demand_transponders[transponder] += number
+        return demand_transponders
 
     def append_demand(self, demand_id: str, genome: list) -> None:
         self.content[demand_id] = genome
