@@ -3,9 +3,10 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     INDIVIDUAL_MUTATION_PROBABILITY,
-    DEMAND_MUTATION_PROBABILITY,
-    # CONNECTION_MUTATION_PROBABILITY,
-    TYPE_MUTATION_PROBABILITY
+    MUTATION_PROBABILITY,
+    TYPE_MUTATION_PROBABILITY,
+    CROSSOVER_PROBABILITY,
+    NO_EPOCHS
 )
 import random
 import copy
@@ -21,6 +22,7 @@ class EvolutionalAlgorithm:
     def __init__(
         self, base_model: Model, demands: list[Demand], size: int
     ) -> None:
+        self.population_size = size
         self.base_model = base_model
         self.demands = demands
         self.population = self.generate_base_population(size)
@@ -53,17 +55,69 @@ class EvolutionalAlgorithm:
 
         return individual
 
-    def mutate_population(self):
+    def run(self) -> None:
+        """
+        Starts the algorithm
+        """
+        cur_epoch = 1
+        while cur_epoch <= NO_EPOCHS:
+            self.step()
+            best_score = \
+                min(self.population, key=lambda a: a.get_cost()).get_cost()
+            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, score: {best_score}")
+            cur_epoch += 1
+
+    def step(self) -> None:
+        """
+        Performs selection and mutation for given epoch
+        """
+        selected_population = self.selection(self.population)
+        mutated_population = self.mutation(selected_population)
+        self.population = mutated_population
+    
+    def selection(self, population: list[Individual]) -> list[Individual]:
+        """
+        Selects individuals for new population using tournament selections
+        with one elite member
+        """
+        new_population = []
+        # Pick an elite member
+        new_population.append(min(population, key=lambda a: a.get_cost()))
+
+        while len(new_population) < self.population_size:
+            first_individual = random.choice(population)
+            second_individual = random.choice(population)
+            if (first_individual.get_cost() < second_individual.get_cost()):
+                new_population.append(first_individual)
+            else:
+                new_population.append(second_individual)
+        return new_population
+    
+    def crossover(self, population: list[Individual]) -> list[Individual]:
+        """
+        Does crossover on population
+        """
+        crossover_population = []
+        for individual in population:
+            if random.random() < CROSSOVER_PROBABILITY:
+                pass
+            else:
+                crossover_population.append(individual)
+        
+        return crossover_population
+
+    def mutation(self, population: list[Individual]) -> list[Individual]:
         """
         Mutates every individual in population
         with given probability
         """
-
-        self.population = [
+        mutated_population = [
             self.mutate_individual(individual)
-            for individual in self.population
+            for individual in population
             if random.random() < INDIVIDUAL_MUTATION_PROBABILITY
         ]
+
+        return mutated_population
 
     def mutate_individual(self, individual: Individual) -> Individual:
         """
@@ -76,7 +130,7 @@ class EvolutionalAlgorithm:
 
         # mutate tranponders
         for demand_id in mutated_individual.content:
-            if random.random() > DEMAND_MUTATION_PROBABILITY:
+            if random.random() > MUTATION_PROBABILITY:
                 continue
 
             demand_transponders = {
@@ -133,7 +187,7 @@ class EvolutionalAlgorithm:
 
         return mutated_individual
 
-    def get_demand_by_id(self, id: str) -> Demand | None:
+    def get_demand_by_id(self, id: str) -> Demand or None:
         """
         Retruns "Demand" class object from base model
         that has the same id as given
