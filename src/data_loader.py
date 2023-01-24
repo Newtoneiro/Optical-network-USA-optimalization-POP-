@@ -39,7 +39,8 @@ class DataLoader:
         for demand in root[1]:
             source = demand[0].text
             target = demand[1].text
-            value = float(demand[2].text)
+            value = demand[2].text
+            value = float(value)
             demands.append(Demand(source, target, value))
 
         self._nodes = nodes
