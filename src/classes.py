@@ -1,8 +1,7 @@
 from config.config import (
     MAX_PATH_CAPACITY,
     TRANSPONDERS,
-    TRANSPONDERS_COSTS,
-    COST_LAMBDA
+    TRANSPONDERS_COSTS
 )
 
 
@@ -79,7 +78,6 @@ class Individual:
 
     def get_cost(self) -> int:
         cost_transponders = 0
-        cost_lambdas = 0
         for demand in self.content.values():
             for connection in demand:
                 transponders = connection[1]
@@ -92,9 +90,4 @@ class Individual:
                     ]
                 )
 
-                for value in transponders.values():
-                    cost_lambdas += value
-
-        cost_lambdas *= COST_LAMBDA
-
-        return cost_transponders + cost_lambdas
+        return cost_transponders

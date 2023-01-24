@@ -3,13 +3,15 @@ from model import Model
 from config.config import (
     TRANSPONDERS,
     INDIVIDUAL_MUTATION_PROBABILITY,
-    MUTATION_PROBABILITY,
-    TYPE_MUTATION_PROBABILITY,
+    DEMAND_MUTATION_PROBABILITY,
     CROSSOVER_PROBABILITY,
-    NO_EPOCHS
+    NO_EPOCHS,
+    OUTPUT_PATH
 )
 import random
 import copy
+import csv
+import os
 
 
 class EvolutionalAlgorithm:
@@ -47,7 +49,7 @@ class EvolutionalAlgorithm:
 
         for demand in self.demands:
             # for now generating single connection
-            genome = self.generate_demand_fullfilment(demand, individual_model)
+            genome = self.generate_demand_fulfillment(demand, individual_model)
             individual.append_demand(
                 demand_id=demand.id,
                 genome=genome
@@ -64,19 +66,23 @@ class EvolutionalAlgorithm:
             self.step()
             # best_score = \
             #     min(self.population, key=lambda a: a.get_cost()).get_cost()
-            scores = set([individual.get_cost() for individual in self.population])
-            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, len: {len(self.population)} score: {scores}, best_score: {min(scores)}")
+            scores = set([
+                individual.get_cost() for individual in self.population
+                ])
+            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, best_score: {min(scores)}")
             cur_epoch += 1
 
     def step(self) -> None:
         """
         Performs selection and mutation for given epoch
         """
-        selected_population = self.selection(self.population)
+        selected_population, elite = self.selection(self.population)
         crossover_population = self.crossover(selected_population)
         mutated_population = self.mutation(crossover_population)
         # mutated_population = self.mutation(selected_population)
         self.population = mutated_population
+        # Add elite
+        self.population.append(copy.deepcopy(elite))
 
     def selection(self, population: list[Individual]) -> list[Individual]:
         """
@@ -85,16 +91,16 @@ class EvolutionalAlgorithm:
         """
         new_population = []
         # Pick an elite member
-        new_population.append(min(population, key=lambda a: a.get_cost()))
+        elite = min(population, key=lambda a: a.get_cost())
 
-        while len(new_population) < self.population_size:
+        while len(new_population) < self.population_size - 1:  # For elite
             first_individual = random.choice(population)
             second_individual = random.choice(population)
             if (first_individual.get_cost() < second_individual.get_cost()):
                 new_population.append(first_individual)
             else:
                 new_population.append(second_individual)
-        return new_population
+        return new_population, elite
 
     def crossover(self, population: list[Individual]) -> list[Individual]:
         """
@@ -118,7 +124,7 @@ class EvolutionalAlgorithm:
                     demand_transponders = individual_partner.sum_transponders(
                         demand_id
                     )
-                new_genome = self.generate_demand_fullfilment(
+                new_genome = self.generate_demand_fulfillment(
                     demand=self.get_demand_by_id(demand_id),
                     model=individual_model,
                     transponders=demand_transponders
@@ -134,29 +140,31 @@ class EvolutionalAlgorithm:
         Mutates every individual in population
         with given probability
         """
-        mutated_population = [
-            self.mutate_individual(individual)
-            if random.random() < INDIVIDUAL_MUTATION_PROBABILITY
-            else individual
-            for individual in population
-        ]
-
-        return mutated_population
-
-    def mutate_individual(self, individual: Individual) -> Individual:
-        """
-        Creates new indiviudal by mutating the given one
-        according to a given set of probabilities
-        """
-
-        mutated_individual = copy.deepcopy(individual)
-        mutated_individual_model = copy.deepcopy(self.base_model)
-
-        # mutate tranponders
-        for demand_id in mutated_individual.content:
-            if random.random() > MUTATION_PROBABILITY:
+        mutated_population = []
+        for individual in population:
+            if random.random() > INDIVIDUAL_MUTATION_PROBABILITY:
+                mutated_population.append(individual)
                 continue
 
+            mutated_individual = Individual()
+            individual_model = copy.deepcopy(self.base_model)
+            for demand_id in [demand.id for demand in self.demands]:
+                demand_transponders = individual.sum_transponders(
+                    demand_id
+                )
+                if random.random() < DEMAND_MUTATION_PROBABILITY:
+                    # If mutation occured, change transponders
+                    transponder_to_change = random.choice(TRANSPONDERS)
+                    transponder_to_change_to = random.choice(
+                        [t for t in TRANSPONDERS if t != transponder_to_change]
+                    )
+                    ratio = transponder_to_change / transponder_to_change_to
+                    if (ratio > 1):
+                        if demand_transponders[transponder_to_change] > 1:
+                            demand_transponders[transponder_to_change] -= 1
+                            demand_transponders[
+                                transponder_to_change_to
+                            ] += ratio
             demand_transponders = mutated_individual.sum_transponders(
                 demand_id
             )
@@ -181,27 +189,22 @@ class EvolutionalAlgorithm:
                             mutated_demand_transponders[200] -= 2
                             mutated_demand_transponders[400] += 1
                     else:
-                        if number >= 1:
-                            # 1x200 -> 2x100
-                            mutated_demand_transponders[200] -= 1
-                            mutated_demand_transponders[100] += 2
-                elif type == 400:
-                    # continue
-                    if number >= 1:
-                        # 1x400 -> 2x200
-                        mutated_demand_transponders[400] -= 1
-                        mutated_demand_transponders[200] += 2
+                        if demand_transponders[
+                                transponder_to_change] > int(1/ratio):
+                            demand_transponders[
+                                transponder_to_change
+                            ] -= int(1/ratio)
+                            demand_transponders[transponder_to_change_to] += 1
 
-            # generate new demand fullfilment
-            new_demand_ff = self.generate_demand_fullfilment(
-                demand=self.get_demand_by_id(demand_id),
-                model=mutated_individual_model,
-                transponders=mutated_demand_transponders
-            )
+                new_genome = self.generate_demand_fulfillment(
+                    demand=self.get_demand_by_id(demand_id),
+                    model=individual_model,
+                    transponders=demand_transponders
+                )
+                mutated_individual.append_demand(demand_id, new_genome)
+            mutated_population.append(mutated_individual)
 
-            mutated_individual.append_demand(demand_id, new_demand_ff)
-
-        return mutated_individual
+        return mutated_population
 
     def get_demand_by_id(self, id: str) -> Demand or None:
         """
@@ -214,11 +217,11 @@ class EvolutionalAlgorithm:
                 return demand
         return None
 
-    def generate_demand_fullfilment(
+    def generate_demand_fulfillment(
         self, demand: Demand, model: Model, transponders: map = None
     ) -> list:
         """
-        Returns proposed demand fullfilment for given demand
+        Returns proposed demand fulfillment for given demand
         """
 
         available_transponders = copy.deepcopy(transponders)
@@ -279,3 +282,24 @@ class EvolutionalAlgorithm:
             demand_value -= selected_transponder
 
         return transponders
+
+    def save_result(self) -> None:
+        with open(OUTPUT_PATH, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(
+                ["Demand_id",
+                 "Path",
+                 "Transponder-100",
+                 "Transponder-200",
+                 "Transponder-400"]
+            )
+            best_individual = min(self.population, key=lambda a: a.get_cost())
+            for demand_id in best_individual.content:
+                for fulfillment in best_individual.content[demand_id]:
+                    writer.writerow(
+                        [demand_id,
+                         fulfillment[0],
+                         fulfillment[1][100],
+                         fulfillment[1][200],
+                         fulfillment[1][400]]
+                    )

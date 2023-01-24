@@ -87,8 +87,9 @@ class Model:
         it calculates the shortest available path
         for two cities given as their names.
         """
-
         pathMap = self.findAllPaths(source)
+        if pathMap[target][0] == np.inf:
+            raise Exception("Max lambda capacity achieved, can't find path.")
 
         shortest_path = [target]
         start = target
