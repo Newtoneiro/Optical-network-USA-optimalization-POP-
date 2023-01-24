@@ -11,7 +11,6 @@ from config.config import (
 import random
 import copy
 import csv
-import os
 
 
 class EvolutionalAlgorithm:
