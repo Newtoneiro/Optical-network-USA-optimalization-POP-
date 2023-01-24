@@ -1,0 +1,1484 @@
+Demand_id,Path,Transponder-100,Transponder-200,Transponder-400
+Vancouver-LosAngeles,"['Vancouver', 'Seattle', 'Portland', 'SanFrancisco', 'LosAngeles']",2,1,4
+Vancouver-SanFrancisco,"['Vancouver', 'Seattle', 'Portland', 'SanFrancisco']",0,3,1
+Vancouver-LasVegas,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'LasVegas']",0,1,0
+Vancouver-SaltLakeCity,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity']",2,0,0
+Vancouver-ElPaso,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix', 'ElPaso']",1,0,0
+Vancouver-Dallas,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas']",0,0,1
+Vancouver-Houston,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston']",0,2,0
+Vancouver-OklahomaCity,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",1,0,0
+Vancouver-Minneapolis,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis']",0,2,0
+Vancouver-KansasCity,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity']",0,1,0
+Vancouver-Denver,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver']",2,1,0
+Vancouver-Chicago,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago']",3,0,1
+Vancouver-Indianapolis,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis']",0,0,1
+Vancouver-Detroit,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit']",0,2,0
+Vancouver-StLouis,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",0,0,1
+Vancouver-Nashville,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville']",0,1,0
+Vancouver-Cleveland,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland']",0,0,1
+Vancouver-NewYork,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork']",2,1,2
+Vancouver-Montreal,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+Vancouver-Charlotte,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Charlotte']",0,1,0
+Vancouver-NewOrleans,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans']",0,1,0
+Vancouver-Boston,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",2,1,0
+Vancouver-Atlanta,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta']",0,2,0
+Vancouver-Miami,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",2,1,0
+Vancouver-WashingtonDC,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,0,1
+Vancouver-Philadelphia,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",2,1,0
+Vancouver-Toronto,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+Vancouver-Pittsburgh,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",1,1,0
+Vancouver-Cincinnati,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Cincinnati']",0,1,0
+Vancouver-Tampa,"['Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",0,1,0
+Vancouver-Memphis,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",0,0,1
+Vancouver-Winnipeg,"['Vancouver', 'Calgary', 'Winnipeg']",1,0,0
+Vancouver-Calgary,"['Vancouver', 'Calgary']",3,0,0
+Vancouver-Seattle,"['Vancouver', 'Seattle']",4,7,5
+Vancouver-Portland,"['Vancouver', 'Seattle', 'Portland']",1,1,2
+Vancouver-Sacrameto,"['Vancouver', 'Seattle', 'Portland', 'SanFrancisco', 'Sacrameto']",1,1,0
+Vancouver-Phoenix,"['Vancouver', 'Seattle', 'Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix']",0,0,1
+Vancouver-SanDiego,"['Vancouver', 'Seattle', 'Portland', 'SanFrancisco', 'LosAngeles', 'SanDiego']",0,1,1
+LosAngeles-Vancouver,"['LosAngeles', 'SanFrancisco', 'Portland', 'Seattle', 'Vancouver']",2,2,3
+LosAngeles-SanFrancisco,"['LosAngeles', 'SanFrancisco']",21,25,31
+LosAngeles-LasVegas,"['LosAngeles', 'LasVegas']",20,7,7
+LosAngeles-SaltLakeCity,"['LosAngeles', 'LasVegas', 'SaltLakeCity']",4,1,3
+LosAngeles-ElPaso,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso']",2,2,1
+LosAngeles-Dallas,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas']",2,8,7
+LosAngeles-Houston,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Houston']",9,7,4
+LosAngeles-OklahomaCity,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity']",1,0,2
+LosAngeles-Minneapolis,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",1,5,3
+LosAngeles-KansasCity,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity']",4,5,0
+LosAngeles-Denver,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver']",1,2,6
+LosAngeles-Chicago,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",10,6,9
+LosAngeles-Indianapolis,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",3,2,1
+LosAngeles-Detroit,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",4,5,4
+LosAngeles-StLouis,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",3,2,3
+LosAngeles-Nashville,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville']",2,1,2
+LosAngeles-Cleveland,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,4,2
+LosAngeles-NewYork,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",22,18,11
+LosAngeles-Montreal,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",1,4,2
+LosAngeles-Charlotte,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",1,2,1
+LosAngeles-NewOrleans,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",3,1,1
+LosAngeles-Boston,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",3,6,3
+LosAngeles-Atlanta,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",11,2,3
+LosAngeles-Miami,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",1,3,5
+LosAngeles-WashingtonDC,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",5,5,6
+LosAngeles-Philadelphia,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",4,5,4
+LosAngeles-Toronto,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",3,2,5
+LosAngeles-Pittsburgh,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",2,1,3
+LosAngeles-Cincinnati,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",2,1,2
+LosAngeles-Tampa,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,2,3
+LosAngeles-Memphis,"['LosAngeles', 'SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis']",0,2,1
+LosAngeles-Winnipeg,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Calgary', 'Winnipeg']",0,0,2
+LosAngeles-Calgary,"['LosAngeles', 'LasVegas', 'SaltLakeCity', 'Calgary']",0,2,1
+LosAngeles-Seattle,"['LosAngeles', 'SanFrancisco', 'Portland', 'Seattle']",2,7,5
+LosAngeles-Portland,"['LosAngeles', 'SanFrancisco', 'Portland']",2,1,5
+LosAngeles-Sacrameto,"['LosAngeles', 'SanFrancisco', 'Sacrameto']",11,9,5
+LosAngeles-Phoenix,"['LosAngeles', 'SanDiego', 'Phoenix']",14,11,13
+LosAngeles-SanDiego,"['LosAngeles', 'SanDiego']",51,42,42
+SanFrancisco-Vancouver,"['SanFrancisco', 'Portland', 'Seattle', 'Vancouver']",0,0,3
+SanFrancisco-LosAngeles,"['SanFrancisco', 'LosAngeles']",38,23,28
+SanFrancisco-LasVegas,"['SanFrancisco', 'Sacrameto', 'LasVegas']",2,3,2
+SanFrancisco-SaltLakeCity,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity']",2,0,2
+SanFrancisco-ElPaso,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso']",1,1,0
+SanFrancisco-Dallas,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Dallas']",1,4,2
+SanFrancisco-Houston,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston']",1,1,3
+SanFrancisco-OklahomaCity,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",2,1,0
+SanFrancisco-Minneapolis,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",5,2,0
+SanFrancisco-KansasCity,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity']",0,0,2
+SanFrancisco-Denver,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver']",1,2,2
+SanFrancisco-Chicago,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",7,3,3
+SanFrancisco-Indianapolis,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",1,1,1
+SanFrancisco-Detroit,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",1,2,2
+SanFrancisco-StLouis,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",1,0,2
+SanFrancisco-Nashville,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",1,0,1
+SanFrancisco-Cleveland,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,2,1
+SanFrancisco-NewYork,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",4,5,7
+SanFrancisco-Montreal,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,2,1
+SanFrancisco-Charlotte,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",0,0,1
+SanFrancisco-NewOrleans,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",1,1,1
+SanFrancisco-Boston,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",3,0,2
+SanFrancisco-Atlanta,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",3,4,0
+SanFrancisco-Miami,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",1,2,2
+SanFrancisco-WashingtonDC,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",4,2,2
+SanFrancisco-Philadelphia,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",2,2,2
+SanFrancisco-Toronto,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",2,2,1
+SanFrancisco-Pittsburgh,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,1,1
+SanFrancisco-Cincinnati,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",1,0,1
+SanFrancisco-Tampa,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,3,0
+SanFrancisco-Memphis,"['SanFrancisco', 'Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",0,2,0
+SanFrancisco-Winnipeg,"['SanFrancisco', 'Portland', 'Seattle', 'Vancouver', 'Calgary', 'Winnipeg']",0,0,1
+SanFrancisco-Calgary,"['SanFrancisco', 'Portland', 'Seattle', 'Vancouver', 'Calgary']",0,1,1
+SanFrancisco-Seattle,"['SanFrancisco', 'Portland', 'Seattle']",5,4,2
+SanFrancisco-Portland,"['SanFrancisco', 'Portland']",1,1,3
+SanFrancisco-Sacrameto,"['SanFrancisco', 'Sacrameto']",20,19,15
+SanFrancisco-Phoenix,"['SanFrancisco', 'Sacrameto', 'LasVegas', 'Phoenix']",8,1,3
+SanFrancisco-SanDiego,"['SanFrancisco', 'LosAngeles', 'SanDiego']",8,3,3
+LasVegas-Vancouver,"['LasVegas', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",1,1,0
+LasVegas-LosAngeles,"['LasVegas', 'LosAngeles']",11,10,8
+LasVegas-SanFrancisco,"['LasVegas', 'Sacrameto', 'SanFrancisco']",5,1,2
+LasVegas-SaltLakeCity,"['LasVegas', 'SaltLakeCity']",1,1,0
+LasVegas-ElPaso,"['LasVegas', 'Phoenix', 'ElPaso']",0,1,0
+LasVegas-Dallas,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas']",2,1,1
+LasVegas-Houston,"['LasVegas', 'Phoenix', 'ElPaso', 'Houston']",0,0,1
+LasVegas-OklahomaCity,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity']",0,0,1
+LasVegas-Minneapolis,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",1,1,0
+LasVegas-KansasCity,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity']",1,1,0
+LasVegas-Denver,"['LasVegas', 'SaltLakeCity', 'Denver']",0,0,1
+LasVegas-Chicago,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",2,0,1
+LasVegas-Indianapolis,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",1,0,1
+LasVegas-Detroit,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",1,0,1
+LasVegas-StLouis,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",0,1,0
+LasVegas-Nashville,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville']",0,0,1
+LasVegas-Cleveland,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,1,0
+LasVegas-NewYork,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",6,2,0
+LasVegas-Montreal,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+LasVegas-Charlotte,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",1,0,0
+LasVegas-NewOrleans,"['LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",0,0,1
+LasVegas-Boston,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",0,2,0
+LasVegas-Atlanta,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",1,0,1
+LasVegas-Miami,"['LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",0,0,1
+LasVegas-WashingtonDC,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,0,1
+LasVegas-Philadelphia,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",1,1,0
+LasVegas-Toronto,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",1,0,1
+LasVegas-Pittsburgh,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+LasVegas-Cincinnati,"['LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",0,0,1
+LasVegas-Tampa,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,1,0
+LasVegas-Memphis,"['LasVegas', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis']",1,0,0
+LasVegas-Winnipeg,"['LasVegas', 'SaltLakeCity', 'Calgary', 'Winnipeg']",1,0,0
+LasVegas-Calgary,"['LasVegas', 'SaltLakeCity', 'Calgary']",0,0,1
+LasVegas-Seattle,"['LasVegas', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,1
+LasVegas-Portland,"['LasVegas', 'SaltLakeCity', 'Portland']",1,1,0
+LasVegas-Sacrameto,"['LasVegas', 'Sacrameto']",2,0,1
+LasVegas-Phoenix,"['LasVegas', 'Phoenix']",2,3,1
+LasVegas-SanDiego,"['LasVegas', 'LosAngeles', 'SanDiego']",3,2,1
+SaltLakeCity-Vancouver,"['SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,1,0
+SaltLakeCity-LosAngeles,"['SaltLakeCity', 'LasVegas', 'LosAngeles']",2,0,4
+SaltLakeCity-SanFrancisco,"['SaltLakeCity', 'Sacrameto', 'SanFrancisco']",3,0,1
+SaltLakeCity-LasVegas,"['SaltLakeCity', 'LasVegas']",1,1,0
+SaltLakeCity-ElPaso,"['SaltLakeCity', 'LasVegas', 'Phoenix', 'ElPaso']",1,0,0
+SaltLakeCity-Dallas,"['SaltLakeCity', 'Denver', 'Dallas']",1,2,0
+SaltLakeCity-Houston,"['SaltLakeCity', 'Denver', 'Dallas', 'Houston']",1,0,1
+SaltLakeCity-OklahomaCity,"['SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",1,0,0
+SaltLakeCity-Minneapolis,"['SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",0,1,0
+SaltLakeCity-KansasCity,"['SaltLakeCity', 'Denver', 'KansasCity']",0,1,0
+SaltLakeCity-Denver,"['SaltLakeCity', 'Denver']",0,0,1
+SaltLakeCity-Chicago,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",0,1,1
+SaltLakeCity-Indianapolis,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",0,0,1
+SaltLakeCity-Detroit,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",2,1,0
+SaltLakeCity-StLouis,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",0,0,1
+SaltLakeCity-Nashville,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",0,0,1
+SaltLakeCity-Cleveland,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,1,0
+SaltLakeCity-NewYork,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",1,0,2
+SaltLakeCity-Montreal,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+SaltLakeCity-Charlotte,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",0,1,0
+SaltLakeCity-NewOrleans,"['SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans']",0,0,1
+SaltLakeCity-Boston,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",1,0,1
+SaltLakeCity-Atlanta,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",0,1,0
+SaltLakeCity-Miami,"['SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",0,0,1
+SaltLakeCity-WashingtonDC,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",2,0,1
+SaltLakeCity-Philadelphia,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,1,0
+SaltLakeCity-Toronto,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+SaltLakeCity-Pittsburgh,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,1,0
+SaltLakeCity-Cincinnati,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",1,0,0
+SaltLakeCity-Tampa,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,0,1
+SaltLakeCity-Memphis,"['SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",0,1,0
+SaltLakeCity-Winnipeg,"['SaltLakeCity', 'Calgary', 'Winnipeg']",0,1,0
+SaltLakeCity-Calgary,"['SaltLakeCity', 'Calgary']",0,1,0
+SaltLakeCity-Seattle,"['SaltLakeCity', 'Portland', 'Seattle']",0,2,0
+SaltLakeCity-Portland,"['SaltLakeCity', 'Portland']",1,1,0
+SaltLakeCity-Sacrameto,"['SaltLakeCity', 'Sacrameto']",1,0,1
+SaltLakeCity-Phoenix,"['SaltLakeCity', 'LasVegas', 'Phoenix']",2,1,0
+SaltLakeCity-SanDiego,"['SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,0,1
+ElPaso-Vancouver,"['ElPaso', 'Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,0,1
+ElPaso-LosAngeles,"['ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",2,3,1
+ElPaso-SanFrancisco,"['ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",0,0,1
+ElPaso-LasVegas,"['ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+ElPaso-SaltLakeCity,"['ElPaso', 'Phoenix', 'LasVegas', 'SaltLakeCity']",1,0,0
+ElPaso-Dallas,"['ElPaso', 'Dallas']",1,0,1
+ElPaso-Houston,"['ElPaso', 'Houston']",0,0,1
+ElPaso-OklahomaCity,"['ElPaso', 'Dallas', 'OklahomaCity']",0,0,1
+ElPaso-Minneapolis,"['ElPaso', 'Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis']",1,1,0
+ElPaso-KansasCity,"['ElPaso', 'Dallas', 'OklahomaCity', 'KansasCity']",0,1,0
+ElPaso-Denver,"['ElPaso', 'Dallas', 'Denver']",0,1,0
+ElPaso-Chicago,"['ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago']",1,2,0
+ElPaso-Indianapolis,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis']",1,0,0
+ElPaso-Detroit,"['ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit']",2,0,0
+ElPaso-StLouis,"['ElPaso', 'Dallas', 'Memphis', 'StLouis']",0,1,0
+ElPaso-Nashville,"['ElPaso', 'Dallas', 'Memphis', 'Nashville']",0,1,0
+ElPaso-Cleveland,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,1,0
+ElPaso-NewYork,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",1,0,1
+ElPaso-Montreal,"['ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,1
+ElPaso-Charlotte,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",1,0,0
+ElPaso-NewOrleans,"['ElPaso', 'Houston', 'NewOrleans']",0,1,0
+ElPaso-Boston,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",0,0,1
+ElPaso-Atlanta,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",1,0,1
+ElPaso-Miami,"['ElPaso', 'Houston', 'NewOrleans', 'Miami']",2,0,0
+ElPaso-WashingtonDC,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",2,0,0
+ElPaso-Philadelphia,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",0,0,1
+ElPaso-Toronto,"['ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+ElPaso-Pittsburgh,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+ElPaso-Cincinnati,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",1,0,0
+ElPaso-Tampa,"['ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,0,1
+ElPaso-Memphis,"['ElPaso', 'Dallas', 'Memphis']",0,1,0
+ElPaso-Winnipeg,"['ElPaso', 'Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis', 'Winnipeg']",0,0,1
+ElPaso-Calgary,"['ElPaso', 'Phoenix', 'LasVegas', 'SaltLakeCity', 'Calgary']",1,0,0
+ElPaso-Seattle,"['ElPaso', 'Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,0
+ElPaso-Portland,"['ElPaso', 'Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland']",0,0,1
+ElPaso-Sacrameto,"['ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto']",1,0,0
+ElPaso-Phoenix,"['ElPaso', 'Phoenix']",0,0,1
+ElPaso-SanDiego,"['ElPaso', 'Phoenix', 'SanDiego']",0,0,1
+Dallas-Vancouver,"['Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",2,1,0
+Dallas-LosAngeles,"['Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",10,7,5
+Dallas-SanFrancisco,"['Dallas', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",2,3,2
+Dallas-LasVegas,"['Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,2
+Dallas-SaltLakeCity,"['Dallas', 'Denver', 'SaltLakeCity']",0,1,1
+Dallas-ElPaso,"['Dallas', 'ElPaso']",0,0,1
+Dallas-Houston,"['Dallas', 'Houston']",10,8,12
+Dallas-OklahomaCity,"['Dallas', 'OklahomaCity']",1,5,1
+Dallas-Minneapolis,"['Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis']",4,1,2
+Dallas-KansasCity,"['Dallas', 'OklahomaCity', 'KansasCity']",0,1,3
+Dallas-Denver,"['Dallas', 'Denver']",0,0,3
+Dallas-Chicago,"['Dallas', 'Memphis', 'StLouis', 'Chicago']",10,1,6
+Dallas-Indianapolis,"['Dallas', 'Memphis', 'Nashville', 'Indianapolis']",5,0,1
+Dallas-Detroit,"['Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit']",2,6,1
+Dallas-StLouis,"['Dallas', 'Memphis', 'StLouis']",3,6,0
+Dallas-Nashville,"['Dallas', 'Memphis', 'Nashville']",0,2,1
+Dallas-Cleveland,"['Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,2,2
+Dallas-NewYork,"['Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",10,6,8
+Dallas-Montreal,"['Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",2,2,1
+Dallas-Charlotte,"['Dallas', 'Memphis', 'Nashville', 'Charlotte']",0,1,1
+Dallas-NewOrleans,"['Dallas', 'Houston', 'NewOrleans']",1,2,1
+Dallas-Boston,"['Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",6,1,1
+Dallas-Atlanta,"['Dallas', 'Memphis', 'Nashville', 'Atlanta']",5,3,3
+Dallas-Miami,"['Dallas', 'Houston', 'NewOrleans', 'Miami']",2,2,3
+Dallas-WashingtonDC,"['Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",5,3,3
+Dallas-Philadelphia,"['Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",5,3,1
+Dallas-Toronto,"['Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",3,3,1
+Dallas-Pittsburgh,"['Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,2,1
+Dallas-Cincinnati,"['Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",2,0,2
+Dallas-Tampa,"['Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",5,0,1
+Dallas-Memphis,"['Dallas', 'Memphis']",2,2,1
+Dallas-Winnipeg,"['Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis', 'Winnipeg']",2,0,0
+Dallas-Calgary,"['Dallas', 'Denver', 'SaltLakeCity', 'Calgary']",2,1,0
+Dallas-Seattle,"['Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,4,0
+Dallas-Portland,"['Dallas', 'Denver', 'SaltLakeCity', 'Portland']",1,1,1
+Dallas-Sacrameto,"['Dallas', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto']",0,0,2
+Dallas-Phoenix,"['Dallas', 'ElPaso', 'Phoenix']",0,6,1
+Dallas-SanDiego,"['Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",2,3,0
+Houston-Vancouver,"['Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",1,1,1
+Houston-LosAngeles,"['Houston', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",1,4,7
+Houston-SanFrancisco,"['Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",1,4,2
+Houston-LasVegas,"['Houston', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+Houston-SaltLakeCity,"['Houston', 'Dallas', 'Denver', 'SaltLakeCity']",0,1,1
+Houston-ElPaso,"['Houston', 'ElPaso']",0,2,0
+Houston-Dallas,"['Houston', 'Dallas']",15,12,8
+Houston-OklahomaCity,"['Houston', 'Dallas', 'OklahomaCity']",5,1,0
+Houston-Minneapolis,"['Houston', 'Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis']",3,1,1
+Houston-KansasCity,"['Houston', 'Dallas', 'OklahomaCity', 'KansasCity']",2,0,2
+Houston-Denver,"['Houston', 'Dallas', 'Denver']",2,1,2
+Houston-Chicago,"['Houston', 'Dallas', 'Memphis', 'StLouis', 'Chicago']",5,4,4
+Houston-Indianapolis,"['Houston', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis']",0,1,1
+Houston-Detroit,"['Houston', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit']",2,2,2
+Houston-StLouis,"['Houston', 'Dallas', 'Memphis', 'StLouis']",1,2,2
+Houston-Nashville,"['Houston', 'Dallas', 'Memphis', 'Nashville']",0,1,1
+Houston-Cleveland,"['Houston', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",2,1,1
+Houston-NewYork,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",7,6,7
+Houston-Montreal,"['Houston', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,2
+Houston-Charlotte,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte']",1,0,1
+Houston-NewOrleans,"['Houston', 'NewOrleans']",1,0,3
+Houston-Boston,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",1,3,1
+Houston-Atlanta,"['Houston', 'NewOrleans', 'Atlanta']",2,3,3
+Houston-Miami,"['Houston', 'NewOrleans', 'Miami']",3,4,2
+Houston-WashingtonDC,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC']",2,3,3
+Houston-Philadelphia,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia']",1,4,1
+Houston-Toronto,"['Houston', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",1,1,2
+Houston-Pittsburgh,"['Houston', 'NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Pittsburgh']",1,1,1
+Houston-Cincinnati,"['Houston', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",0,1,2
+Houston-Tampa,"['Houston', 'NewOrleans', 'Atlanta', 'Tampa']",1,4,0
+Houston-Memphis,"['Houston', 'Dallas', 'Memphis']",0,2,1
+Houston-Winnipeg,"['Houston', 'Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis', 'Winnipeg']",2,0,0
+Houston-Calgary,"['Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Calgary']",1,0,1
+Houston-Seattle,"['Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",3,1,1
+Houston-Portland,"['Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland']",2,0,1
+Houston-Sacrameto,"['Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto']",0,0,1
+Houston-Phoenix,"['Houston', 'ElPaso', 'Phoenix']",1,3,1
+Houston-SanDiego,"['Houston', 'ElPaso', 'Phoenix', 'SanDiego']",1,1,1
+OklahomaCity-Vancouver,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,1,0
+OklahomaCity-LosAngeles,"['OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",0,5,0
+OklahomaCity-SanFrancisco,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,2,0
+OklahomaCity-LasVegas,"['OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+OklahomaCity-SaltLakeCity,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity']",1,0,0
+OklahomaCity-ElPaso,"['OklahomaCity', 'Dallas', 'ElPaso']",0,1,0
+OklahomaCity-Dallas,"['OklahomaCity', 'Dallas']",3,2,2
+OklahomaCity-Houston,"['OklahomaCity', 'Dallas', 'Houston']",4,0,1
+OklahomaCity-Minneapolis,"['OklahomaCity', 'KansasCity', 'Minneapolis']",4,0,0
+OklahomaCity-KansasCity,"['OklahomaCity', 'KansasCity']",3,0,1
+OklahomaCity-Denver,"['OklahomaCity', 'KansasCity', 'Denver']",1,0,1
+OklahomaCity-Chicago,"['OklahomaCity', 'KansasCity', 'StLouis', 'Chicago']",1,2,2
+OklahomaCity-Indianapolis,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis']",0,0,1
+OklahomaCity-Detroit,"['OklahomaCity', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",1,0,1
+OklahomaCity-StLouis,"['OklahomaCity', 'KansasCity', 'StLouis']",2,2,0
+OklahomaCity-Nashville,"['OklahomaCity', 'Dallas', 'Memphis', 'Nashville']",0,0,1
+OklahomaCity-Cleveland,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,1,0
+OklahomaCity-NewYork,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",1,1,3
+OklahomaCity-Montreal,"['OklahomaCity', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",1,1,0
+OklahomaCity-Charlotte,"['OklahomaCity', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",0,1,0
+OklahomaCity-NewOrleans,"['OklahomaCity', 'Dallas', 'Houston', 'NewOrleans']",1,1,0
+OklahomaCity-Boston,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",0,2,0
+OklahomaCity-Atlanta,"['OklahomaCity', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",1,0,1
+OklahomaCity-Miami,"['OklahomaCity', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",0,0,1
+OklahomaCity-WashingtonDC,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",0,1,1
+OklahomaCity-Philadelphia,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,2,0
+OklahomaCity-Toronto,"['OklahomaCity', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,2,0
+OklahomaCity-Pittsburgh,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",1,0,1
+OklahomaCity-Cincinnati,"['OklahomaCity', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",1,0,1
+OklahomaCity-Tampa,"['OklahomaCity', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,1,0
+OklahomaCity-Memphis,"['OklahomaCity', 'Dallas', 'Memphis']",2,1,0
+OklahomaCity-Winnipeg,"['OklahomaCity', 'KansasCity', 'Minneapolis', 'Winnipeg']",0,0,1
+OklahomaCity-Calgary,"['OklahomaCity', 'KansasCity', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+OklahomaCity-Seattle,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",2,0,0
+OklahomaCity-Portland,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",1,0,0
+OklahomaCity-Sacrameto,"['OklahomaCity', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+OklahomaCity-Phoenix,"['OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix']",0,1,1
+OklahomaCity-SanDiego,"['OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,1,0
+Minneapolis-Vancouver,"['Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",1,0,1
+Minneapolis-LosAngeles,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",5,6,2
+Minneapolis-SanFrancisco,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",3,1,1
+Minneapolis-LasVegas,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,1,1
+Minneapolis-SaltLakeCity,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+Minneapolis-ElPaso,"['Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas', 'ElPaso']",0,0,1
+Minneapolis-Dallas,"['Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas']",1,2,2
+Minneapolis-Houston,"['Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas', 'Houston']",4,0,2
+Minneapolis-OklahomaCity,"['Minneapolis', 'KansasCity', 'OklahomaCity']",0,0,1
+Minneapolis-KansasCity,"['Minneapolis', 'KansasCity']",5,2,0
+Minneapolis-Denver,"['Minneapolis', 'KansasCity', 'Denver']",2,1,1
+Minneapolis-Chicago,"['Minneapolis', 'Chicago']",14,8,5
+Minneapolis-Indianapolis,"['Minneapolis', 'Chicago', 'Indianapolis']",0,1,1
+Minneapolis-Detroit,"['Minneapolis', 'Chicago', 'Detroit']",5,5,1
+Minneapolis-StLouis,"['Minneapolis', 'Chicago', 'StLouis']",5,1,1
+Minneapolis-Nashville,"['Minneapolis', 'Chicago', 'Indianapolis', 'Nashville']",2,0,1
+Minneapolis-Cleveland,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland']",3,1,1
+Minneapolis-NewYork,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork']",10,7,4
+Minneapolis-Montreal,"['Minneapolis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,2,1
+Minneapolis-Charlotte,"['Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Charlotte']",0,1,1
+Minneapolis-NewOrleans,"['Minneapolis', 'Chicago', 'StLouis', 'Memphis', 'NewOrleans']",0,0,1
+Minneapolis-Boston,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",3,2,1
+Minneapolis-Atlanta,"['Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta']",1,1,2
+Minneapolis-Miami,"['Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",0,2,1
+Minneapolis-WashingtonDC,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,3,2
+Minneapolis-Philadelphia,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",3,2,1
+Minneapolis-Toronto,"['Minneapolis', 'Chicago', 'Detroit', 'Toronto']",2,1,2
+Minneapolis-Pittsburgh,"['Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",0,0,2
+Minneapolis-Cincinnati,"['Minneapolis', 'Chicago', 'Indianapolis', 'Cincinnati']",0,1,1
+Minneapolis-Tampa,"['Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",3,1,0
+Minneapolis-Memphis,"['Minneapolis', 'Chicago', 'StLouis', 'Memphis']",1,2,0
+Minneapolis-Winnipeg,"['Minneapolis', 'Winnipeg']",0,0,1
+Minneapolis-Calgary,"['Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Minneapolis-Seattle,"['Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,0,2
+Minneapolis-Portland,"['Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle', 'Portland']",0,0,1
+Minneapolis-Sacrameto,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,1,0
+Minneapolis-Phoenix,"['Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix']",0,0,2
+Minneapolis-SanDiego,"['Minneapolis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",2,1,0
+KansasCity-Vancouver,"['KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",2,0,0
+KansasCity-LosAngeles,"['KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",1,2,3
+KansasCity-SanFrancisco,"['KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",1,1,1
+KansasCity-LasVegas,"['KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,0,1
+KansasCity-SaltLakeCity,"['KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+KansasCity-ElPaso,"['KansasCity', 'OklahomaCity', 'Dallas', 'ElPaso']",1,0,0
+KansasCity-Dallas,"['KansasCity', 'OklahomaCity', 'Dallas']",1,4,1
+KansasCity-Houston,"['KansasCity', 'OklahomaCity', 'Dallas', 'Houston']",4,1,1
+KansasCity-OklahomaCity,"['KansasCity', 'OklahomaCity']",0,3,0
+KansasCity-Minneapolis,"['KansasCity', 'Minneapolis']",0,3,1
+KansasCity-Denver,"['KansasCity', 'Denver']",2,1,1
+KansasCity-Chicago,"['KansasCity', 'StLouis', 'Chicago']",4,4,3
+KansasCity-Indianapolis,"['KansasCity', 'StLouis', 'Indianapolis']",3,1,0
+KansasCity-Detroit,"['KansasCity', 'StLouis', 'Chicago', 'Detroit']",3,1,1
+KansasCity-StLouis,"['KansasCity', 'StLouis']",2,0,3
+KansasCity-Nashville,"['KansasCity', 'StLouis', 'Memphis', 'Nashville']",0,2,0
+KansasCity-Cleveland,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,0,1
+KansasCity-NewYork,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",2,1,5
+KansasCity-Montreal,"['KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",2,0,1
+KansasCity-Charlotte,"['KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",1,1,0
+KansasCity-NewOrleans,"['KansasCity', 'StLouis', 'Memphis', 'NewOrleans']",1,0,1
+KansasCity-Boston,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",2,1,1
+KansasCity-Atlanta,"['KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",4,2,0
+KansasCity-Miami,"['KansasCity', 'StLouis', 'Memphis', 'NewOrleans', 'Miami']",1,0,1
+KansasCity-WashingtonDC,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",4,1,1
+KansasCity-Philadelphia,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,0,2
+KansasCity-Toronto,"['KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,1,1
+KansasCity-Pittsburgh,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+KansasCity-Cincinnati,"['KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",1,1,1
+KansasCity-Tampa,"['KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,2,0
+KansasCity-Memphis,"['KansasCity', 'StLouis', 'Memphis']",2,1,0
+KansasCity-Winnipeg,"['KansasCity', 'Minneapolis', 'Winnipeg']",1,0,0
+KansasCity-Calgary,"['KansasCity', 'Minneapolis', 'Winnipeg', 'Calgary']",1,0,0
+KansasCity-Seattle,"['KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,2,0
+KansasCity-Portland,"['KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+KansasCity-Sacrameto,"['KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,0,1
+KansasCity-Phoenix,"['KansasCity', 'OklahomaCity', 'Dallas', 'ElPaso', 'Phoenix']",0,0,1
+KansasCity-SanDiego,"['KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,0,1
+Denver-Vancouver,"['Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,1,1
+Denver-LosAngeles,"['Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",3,7,3
+Denver-SanFrancisco,"['Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",2,2,2
+Denver-LasVegas,"['Denver', 'SaltLakeCity', 'LasVegas']",2,1,0
+Denver-SaltLakeCity,"['Denver', 'SaltLakeCity']",1,2,0
+Denver-ElPaso,"['Denver', 'Dallas', 'ElPaso']",0,0,1
+Denver-Dallas,"['Denver', 'Dallas']",2,3,1
+Denver-Houston,"['Denver', 'Dallas', 'Houston']",1,3,1
+Denver-OklahomaCity,"['Denver', 'KansasCity', 'OklahomaCity']",0,0,1
+Denver-Minneapolis,"['Denver', 'KansasCity', 'Minneapolis']",1,1,1
+Denver-KansasCity,"['Denver', 'KansasCity']",3,1,0
+Denver-Chicago,"['Denver', 'KansasCity', 'StLouis', 'Chicago']",0,4,2
+Denver-Indianapolis,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis']",0,0,1
+Denver-Detroit,"['Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",2,2,1
+Denver-StLouis,"['Denver', 'KansasCity', 'StLouis']",1,0,1
+Denver-Nashville,"['Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",1,0,1
+Denver-Cleveland,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",3,1,0
+Denver-NewYork,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",2,4,3
+Denver-Montreal,"['Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,1
+Denver-Charlotte,"['Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",1,0,1
+Denver-NewOrleans,"['Denver', 'Dallas', 'Houston', 'NewOrleans']",1,1,0
+Denver-Boston,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",0,1,1
+Denver-Atlanta,"['Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",1,0,2
+Denver-Miami,"['Denver', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",0,0,2
+Denver-WashingtonDC,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,1,2
+Denver-Philadelphia,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,1,1
+Denver-Toronto,"['Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,1,1
+Denver-Pittsburgh,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",1,1,0
+Denver-Cincinnati,"['Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",1,1,0
+Denver-Tampa,"['Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,2,0
+Denver-Memphis,"['Denver', 'KansasCity', 'StLouis', 'Memphis']",0,1,0
+Denver-Winnipeg,"['Denver', 'KansasCity', 'Minneapolis', 'Winnipeg']",0,1,0
+Denver-Calgary,"['Denver', 'SaltLakeCity', 'Calgary']",0,0,1
+Denver-Seattle,"['Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,1
+Denver-Portland,"['Denver', 'SaltLakeCity', 'Portland']",1,1,0
+Denver-Sacrameto,"['Denver', 'SaltLakeCity', 'Sacrameto']",0,2,0
+Denver-Phoenix,"['Denver', 'SaltLakeCity', 'LasVegas', 'Phoenix']",1,2,1
+Denver-SanDiego,"['Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",3,1,0
+Chicago-Vancouver,"['Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",3,0,1
+Chicago-LosAngeles,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",9,9,8
+Chicago-SanFrancisco,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",6,7,1
+Chicago-LasVegas,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,2,1
+Chicago-SaltLakeCity,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",3,1,0
+Chicago-ElPaso,"['Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso']",0,0,1
+Chicago-Dallas,"['Chicago', 'StLouis', 'Memphis', 'Dallas']",3,3,7
+Chicago-Houston,"['Chicago', 'StLouis', 'Memphis', 'Dallas', 'Houston']",3,3,5
+Chicago-OklahomaCity,"['Chicago', 'StLouis', 'KansasCity', 'OklahomaCity']",4,1,1
+Chicago-Minneapolis,"['Chicago', 'Minneapolis']",12,9,5
+Chicago-KansasCity,"['Chicago', 'StLouis', 'KansasCity']",4,1,5
+Chicago-Denver,"['Chicago', 'StLouis', 'KansasCity', 'Denver']",5,1,2
+Chicago-Indianapolis,"['Chicago', 'Indianapolis']",9,8,8
+Chicago-Detroit,"['Chicago', 'Detroit']",15,14,18
+Chicago-StLouis,"['Chicago', 'StLouis']",8,9,8
+Chicago-Nashville,"['Chicago', 'Indianapolis', 'Nashville']",1,4,2
+Chicago-Cleveland,"['Chicago', 'Detroit', 'Cleveland']",14,5,6
+Chicago-NewYork,"['Chicago', 'Detroit', 'Cleveland', 'NewYork']",25,23,20
+Chicago-Montreal,"['Chicago', 'Detroit', 'Toronto', 'Montreal']",3,3,4
+Chicago-Charlotte,"['Chicago', 'Indianapolis', 'Nashville', 'Charlotte']",1,2,2
+Chicago-NewOrleans,"['Chicago', 'StLouis', 'Memphis', 'NewOrleans']",1,2,1
+Chicago-Boston,"['Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",3,8,4
+Chicago-Atlanta,"['Chicago', 'Indianapolis', 'Nashville', 'Atlanta']",10,8,4
+Chicago-Miami,"['Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",8,6,1
+Chicago-WashingtonDC,"['Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",13,8,9
+Chicago-Philadelphia,"['Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",3,8,7
+Chicago-Toronto,"['Chicago', 'Detroit', 'Toronto']",6,12,6
+Chicago-Pittsburgh,"['Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",6,8,2
+Chicago-Cincinnati,"['Chicago', 'Indianapolis', 'Cincinnati']",3,4,8
+Chicago-Tampa,"['Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",3,2,2
+Chicago-Memphis,"['Chicago', 'StLouis', 'Memphis']",2,4,1
+Chicago-Winnipeg,"['Chicago', 'Minneapolis', 'Winnipeg']",0,1,1
+Chicago-Calgary,"['Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,0,1
+Chicago-Seattle,"['Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",2,2,2
+Chicago-Portland,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,2
+Chicago-Sacrameto,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,0,2
+Chicago-Phoenix,"['Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",2,2,2
+Chicago-SanDiego,"['Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",4,2,1
+Indianapolis-Vancouver,"['Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,1,0
+Indianapolis-LosAngeles,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",0,0,3
+Indianapolis-SanFrancisco,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,0,2
+Indianapolis-LasVegas,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",2,0,0
+Indianapolis-SaltLakeCity,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Indianapolis-ElPaso,"['Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,0,1
+Indianapolis-Dallas,"['Indianapolis', 'Nashville', 'Memphis', 'Dallas']",4,1,1
+Indianapolis-Houston,"['Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'Houston']",4,0,1
+Indianapolis-OklahomaCity,"['Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",0,0,1
+Indianapolis-Minneapolis,"['Indianapolis', 'Chicago', 'Minneapolis']",0,1,1
+Indianapolis-KansasCity,"['Indianapolis', 'StLouis', 'KansasCity']",2,1,0
+Indianapolis-Denver,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver']",0,2,0
+Indianapolis-Chicago,"['Indianapolis', 'Chicago']",11,4,9
+Indianapolis-Detroit,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit']",2,1,5
+Indianapolis-StLouis,"['Indianapolis', 'StLouis']",2,3,1
+Indianapolis-Nashville,"['Indianapolis', 'Nashville']",0,3,0
+Indianapolis-Cleveland,"['Indianapolis', 'Cincinnati', 'Cleveland']",1,3,1
+Indianapolis-NewYork,"['Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",7,3,5
+Indianapolis-Montreal,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit', 'Toronto', 'Montreal']",1,0,1
+Indianapolis-Charlotte,"['Indianapolis', 'Nashville', 'Charlotte']",1,1,1
+Indianapolis-NewOrleans,"['Indianapolis', 'Nashville', 'Memphis', 'NewOrleans']",0,1,0
+Indianapolis-Boston,"['Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",0,2,1
+Indianapolis-Atlanta,"['Indianapolis', 'Nashville', 'Atlanta']",3,1,2
+Indianapolis-Miami,"['Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",0,2,1
+Indianapolis-WashingtonDC,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,2,3
+Indianapolis-Philadelphia,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",2,2,1
+Indianapolis-Toronto,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit', 'Toronto']",0,2,2
+Indianapolis-Pittsburgh,"['Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",3,0,1
+Indianapolis-Cincinnati,"['Indianapolis', 'Cincinnati']",5,4,3
+Indianapolis-Tampa,"['Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",0,0,1
+Indianapolis-Memphis,"['Indianapolis', 'Nashville', 'Memphis']",0,0,1
+Indianapolis-Winnipeg,"['Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Indianapolis-Calgary,"['Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,0,0
+Indianapolis-Seattle,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",2,1,0
+Indianapolis-Portland,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Indianapolis-Sacrameto,"['Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+Indianapolis-Phoenix,"['Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,2,0
+Indianapolis-SanDiego,"['Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",1,0,1
+Detroit-Vancouver,"['Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,2,0
+Detroit-LosAngeles,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",6,2,5
+Detroit-SanFrancisco,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",4,3,1
+Detroit-LasVegas,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,1,0
+Detroit-SaltLakeCity,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+Detroit-ElPaso,"['Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso']",0,0,1
+Detroit-Dallas,"['Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas']",1,2,3
+Detroit-Houston,"['Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'Houston']",4,1,2
+Detroit-OklahomaCity,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'OklahomaCity']",1,1,1
+Detroit-Minneapolis,"['Detroit', 'Chicago', 'Minneapolis']",4,1,3
+Detroit-KansasCity,"['Detroit', 'Chicago', 'StLouis', 'KansasCity']",4,1,1
+Detroit-Denver,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver']",1,1,1
+Detroit-Chicago,"['Detroit', 'Chicago']",16,14,18
+Detroit-Indianapolis,"['Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis']",10,4,1
+Detroit-StLouis,"['Detroit', 'Chicago', 'StLouis']",4,1,3
+Detroit-Nashville,"['Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville']",3,3,0
+Detroit-Cleveland,"['Detroit', 'Cleveland']",16,17,16
+Detroit-NewYork,"['Detroit', 'Cleveland', 'NewYork']",19,24,15
+Detroit-Montreal,"['Detroit', 'Toronto', 'Montreal']",2,5,2
+Detroit-Charlotte,"['Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte']",2,1,1
+Detroit-NewOrleans,"['Detroit', 'Chicago', 'StLouis', 'Memphis', 'NewOrleans']",1,0,1
+Detroit-Boston,"['Detroit', 'Cleveland', 'NewYork', 'Boston']",5,5,3
+Detroit-Atlanta,"['Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta']",0,2,5
+Detroit-Miami,"['Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",3,1,3
+Detroit-WashingtonDC,"['Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",9,8,8
+Detroit-Philadelphia,"['Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",13,5,4
+Detroit-Toronto,"['Detroit', 'Toronto']",9,9,11
+Detroit-Pittsburgh,"['Detroit', 'Cleveland', 'Pittsburgh']",4,8,4
+Detroit-Cincinnati,"['Detroit', 'Cleveland', 'Cincinnati']",4,5,3
+Detroit-Tampa,"['Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa']",2,1,1
+Detroit-Memphis,"['Detroit', 'Chicago', 'StLouis', 'Memphis']",4,0,1
+Detroit-Winnipeg,"['Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",2,0,1
+Detroit-Calgary,"['Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,0,1
+Detroit-Seattle,"['Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",3,0,1
+Detroit-Portland,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Detroit-Sacrameto,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,2,0
+Detroit-Phoenix,"['Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,2,1
+Detroit-SanDiego,"['Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,0,2
+StLouis-Vancouver,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,0,1
+StLouis-LosAngeles,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",7,2,2
+StLouis-SanFrancisco,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,1,2
+StLouis-LasVegas,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,1,0
+StLouis-SaltLakeCity,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+StLouis-ElPaso,"['StLouis', 'Memphis', 'Dallas', 'ElPaso']",2,0,0
+StLouis-Dallas,"['StLouis', 'Memphis', 'Dallas']",1,1,3
+StLouis-Houston,"['StLouis', 'Memphis', 'Dallas', 'Houston']",2,1,2
+StLouis-OklahomaCity,"['StLouis', 'KansasCity', 'OklahomaCity']",0,1,1
+StLouis-Minneapolis,"['StLouis', 'Chicago', 'Minneapolis']",3,2,1
+StLouis-KansasCity,"['StLouis', 'KansasCity']",4,3,1
+StLouis-Denver,"['StLouis', 'KansasCity', 'Denver']",1,2,0
+StLouis-Chicago,"['StLouis', 'Chicago']",6,7,9
+StLouis-Indianapolis,"['StLouis', 'Indianapolis']",2,2,2
+StLouis-Detroit,"['StLouis', 'Chicago', 'Detroit']",6,1,3
+StLouis-Nashville,"['StLouis', 'Memphis', 'Nashville']",2,3,0
+StLouis-Cleveland,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,1,2
+StLouis-NewYork,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",3,5,6
+StLouis-Montreal,"['StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",1,1,1
+StLouis-Charlotte,"['StLouis', 'Memphis', 'Nashville', 'Charlotte']",1,1,1
+StLouis-NewOrleans,"['StLouis', 'Memphis', 'NewOrleans']",0,0,1
+StLouis-Boston,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",2,1,2
+StLouis-Atlanta,"['StLouis', 'Memphis', 'Nashville', 'Atlanta']",1,3,2
+StLouis-Miami,"['StLouis', 'Memphis', 'NewOrleans', 'Miami']",0,1,2
+StLouis-WashingtonDC,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,4,2
+StLouis-Philadelphia,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",1,1,2
+StLouis-Toronto,"['StLouis', 'Chicago', 'Detroit', 'Toronto']",0,1,3
+StLouis-Pittsburgh,"['StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,3,1
+StLouis-Cincinnati,"['StLouis', 'Indianapolis', 'Cincinnati']",1,1,2
+StLouis-Tampa,"['StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",1,2,0
+StLouis-Memphis,"['StLouis', 'Memphis']",1,1,2
+StLouis-Winnipeg,"['StLouis', 'Chicago', 'Minneapolis', 'Winnipeg']",1,0,1
+StLouis-Calgary,"['StLouis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+StLouis-Seattle,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,0,1
+StLouis-Portland,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+StLouis-Sacrameto,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+StLouis-Phoenix,"['StLouis', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",1,1,1
+StLouis-SanDiego,"['StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",4,0,0
+Nashville-Vancouver,"['Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",1,0,0
+Nashville-LosAngeles,"['Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",1,2,1
+Nashville-SanFrancisco,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",2,1,0
+Nashville-LasVegas,"['Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",1,0,0
+Nashville-SaltLakeCity,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+Nashville-ElPaso,"['Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,0,0
+Nashville-Dallas,"['Nashville', 'Memphis', 'Dallas']",2,1,1
+Nashville-Houston,"['Nashville', 'Memphis', 'Dallas', 'Houston']",4,1,0
+Nashville-OklahomaCity,"['Nashville', 'Memphis', 'Dallas', 'OklahomaCity']",0,0,1
+Nashville-Minneapolis,"['Nashville', 'Indianapolis', 'Chicago', 'Minneapolis']",0,2,0
+Nashville-KansasCity,"['Nashville', 'Memphis', 'StLouis', 'KansasCity']",1,1,0
+Nashville-Denver,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver']",0,1,0
+Nashville-Chicago,"['Nashville', 'Indianapolis', 'Chicago']",1,2,3
+Nashville-Indianapolis,"['Nashville', 'Indianapolis']",2,1,1
+Nashville-Detroit,"['Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit']",3,3,0
+Nashville-StLouis,"['Nashville', 'Memphis', 'StLouis']",1,2,1
+Nashville-Cleveland,"['Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",2,1,1
+Nashville-NewYork,"['Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",2,5,3
+Nashville-Montreal,"['Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit', 'Toronto', 'Montreal']",0,1,1
+Nashville-Charlotte,"['Nashville', 'Charlotte']",0,0,1
+Nashville-NewOrleans,"['Nashville', 'Memphis', 'NewOrleans']",0,1,0
+Nashville-Boston,"['Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",3,1,0
+Nashville-Atlanta,"['Nashville', 'Atlanta']",3,1,3
+Nashville-Miami,"['Nashville', 'Atlanta', 'Tampa', 'Miami']",2,2,0
+Nashville-WashingtonDC,"['Nashville', 'Charlotte', 'WashingtonDC']",1,2,2
+Nashville-Philadelphia,"['Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",2,1,1
+Nashville-Toronto,"['Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit', 'Toronto']",2,0,1
+Nashville-Pittsburgh,"['Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+Nashville-Cincinnati,"['Nashville', 'Indianapolis', 'Cincinnati']",1,2,1
+Nashville-Tampa,"['Nashville', 'Atlanta', 'Tampa']",1,0,1
+Nashville-Memphis,"['Nashville', 'Memphis']",0,1,1
+Nashville-Winnipeg,"['Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",1,0,0
+Nashville-Calgary,"['Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Nashville-Seattle,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,0
+Nashville-Portland,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+Nashville-Sacrameto,"['Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,0,0
+Nashville-Phoenix,"['Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,1,0
+Nashville-SanDiego,"['Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,0,1
+Cleveland-Vancouver,"['Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",1,0,1
+Cleveland-LosAngeles,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",2,3,2
+Cleveland-SanFrancisco,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",1,1,1
+Cleveland-LasVegas,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,0,1
+Cleveland-SaltLakeCity,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",1,1,0
+Cleveland-ElPaso,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,0,0
+Cleveland-Dallas,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas']",1,0,2
+Cleveland-Houston,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'Houston']",1,3,1
+Cleveland-OklahomaCity,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",1,1,0
+Cleveland-Minneapolis,"['Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",4,2,0
+Cleveland-KansasCity,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",1,1,1
+Cleveland-Denver,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",0,0,1
+Cleveland-Chicago,"['Cleveland', 'Detroit', 'Chicago']",6,4,8
+Cleveland-Indianapolis,"['Cleveland', 'Cincinnati', 'Indianapolis']",7,0,1
+Cleveland-Detroit,"['Cleveland', 'Detroit']",16,18,15
+Cleveland-StLouis,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",0,0,3
+Cleveland-Nashville,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville']",3,1,0
+Cleveland-NewYork,"['Cleveland', 'NewYork']",13,19,7
+Cleveland-Montreal,"['Cleveland', 'Detroit', 'Toronto', 'Montreal']",1,1,2
+Cleveland-Charlotte,"['Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte']",1,1,1
+Cleveland-NewOrleans,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'NewOrleans']",0,0,1
+Cleveland-Boston,"['Cleveland', 'NewYork', 'Boston']",2,3,2
+Cleveland-Atlanta,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta']",2,4,1
+Cleveland-Miami,"['Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",0,2,1
+Cleveland-WashingtonDC,"['Cleveland', 'Pittsburgh', 'WashingtonDC']",3,6,6
+Cleveland-Philadelphia,"['Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",8,5,2
+Cleveland-Toronto,"['Cleveland', 'Detroit', 'Toronto']",3,10,5
+Cleveland-Pittsburgh,"['Cleveland', 'Pittsburgh']",2,8,5
+Cleveland-Cincinnati,"['Cleveland', 'Cincinnati']",0,2,3
+Cleveland-Tampa,"['Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa']",2,2,0
+Cleveland-Memphis,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis']",1,1,0
+Cleveland-Winnipeg,"['Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",1,1,0
+Cleveland-Calgary,"['Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,0,0
+Cleveland-Seattle,"['Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",2,1,0
+Cleveland-Portland,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Cleveland-Sacrameto,"['Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,1,0
+Cleveland-Phoenix,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",1,1,1
+Cleveland-SanDiego,"['Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,0,1
+NewYork-Vancouver,"['NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",2,1,2
+NewYork-LosAngeles,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",19,12,15
+NewYork-SanFrancisco,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",2,6,7
+NewYork-LasVegas,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,1,2
+NewYork-SaltLakeCity,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",1,0,2
+NewYork-ElPaso,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,0,1
+NewYork-Dallas,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas']",9,9,6
+NewYork-Houston,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",1,8,7
+NewYork-OklahomaCity,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",6,2,1
+NewYork-Minneapolis,"['NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",6,8,4
+NewYork-KansasCity,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",1,6,2
+NewYork-Denver,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",8,1,3
+NewYork-Chicago,"['NewYork', 'Cleveland', 'Detroit', 'Chicago']",19,28,19
+NewYork-Indianapolis,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis']",6,7,3
+NewYork-Detroit,"['NewYork', 'Cleveland', 'Detroit']",17,17,19
+NewYork-StLouis,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",9,8,3
+NewYork-Nashville,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville']",1,4,3
+NewYork-Cleveland,"['NewYork', 'Cleveland']",17,7,12
+NewYork-Montreal,"['NewYork', 'Boston', 'Montreal']",13,16,19
+NewYork-Charlotte,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte']",4,4,5
+NewYork-NewOrleans,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",2,2,2
+NewYork-Boston,"['NewYork', 'Boston']",57,55,52
+NewYork-Atlanta,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta']",13,18,6
+NewYork-Miami,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",10,11,7
+NewYork-WashingtonDC,"['NewYork', 'Philadelphia', 'WashingtonDC']",63,68,60
+NewYork-Philadelphia,"['NewYork', 'Philadelphia']",152,159,143
+NewYork-Toronto,"['NewYork', 'Toronto']",21,23,22
+NewYork-Pittsburgh,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Pittsburgh']",21,13,10
+NewYork-Cincinnati,"['NewYork', 'Cleveland', 'Cincinnati']",5,4,7
+NewYork-Tampa,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa']",1,3,6
+NewYork-Memphis,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis']",1,1,4
+NewYork-Winnipeg,"['NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,2
+NewYork-Calgary,"['NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,1,1
+NewYork-Seattle,"['NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,3,4
+NewYork-Portland,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",2,2,2
+NewYork-Sacrameto,"['NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",2,3,1
+NewYork-Phoenix,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",2,1,5
+NewYork-SanDiego,"['NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,1,4
+Montreal-Vancouver,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,1,0
+Montreal-LosAngeles,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",3,4,2
+Montreal-SanFrancisco,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,2,1
+Montreal-LasVegas,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,1,0
+Montreal-SaltLakeCity,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",1,1,0
+Montreal-ElPaso,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso']",1,0,0
+Montreal-Dallas,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas']",1,1,2
+Montreal-Houston,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'Houston']",1,1,1
+Montreal-OklahomaCity,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'OklahomaCity']",0,0,1
+Montreal-Minneapolis,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'Minneapolis']",0,1,2
+Montreal-KansasCity,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity']",1,1,1
+Montreal-Denver,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver']",1,2,0
+Montreal-Chicago,"['Montreal', 'Toronto', 'Detroit', 'Chicago']",1,3,5
+Montreal-Indianapolis,"['Montreal', 'Toronto', 'Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis']",0,1,1
+Montreal-Detroit,"['Montreal', 'Toronto', 'Detroit']",4,2,3
+Montreal-StLouis,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis']",2,0,1
+Montreal-Nashville,"['Montreal', 'Toronto', 'Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville']",0,2,0
+Montreal-Cleveland,"['Montreal', 'Toronto', 'Detroit', 'Cleveland']",1,1,2
+Montreal-NewYork,"['Montreal', 'Boston', 'NewYork']",18,18,17
+Montreal-Charlotte,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte']",2,1,0
+Montreal-NewOrleans,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",0,1,0
+Montreal-Boston,"['Montreal', 'Boston']",7,8,5
+Montreal-Atlanta,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta']",1,4,0
+Montreal-Miami,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",2,1,1
+Montreal-WashingtonDC,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC']",8,3,4
+Montreal-Philadelphia,"['Montreal', 'Boston', 'NewYork', 'Philadelphia']",3,2,6
+Montreal-Toronto,"['Montreal', 'Toronto']",8,3,4
+Montreal-Pittsburgh,"['Montreal', 'Toronto', 'Detroit', 'Cleveland', 'Pittsburgh']",2,0,2
+Montreal-Cincinnati,"['Montreal', 'Toronto', 'Detroit', 'Cleveland', 'Cincinnati']",3,0,1
+Montreal-Tampa,"['Montreal', 'Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa']",2,1,0
+Montreal-Memphis,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis']",0,0,1
+Montreal-Winnipeg,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Montreal-Calgary,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Montreal-Seattle,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",1,2,0
+Montreal-Portland,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Montreal-Sacrameto,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,0,1
+Montreal-Phoenix,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,0,1
+Montreal-SanDiego,"['Montreal', 'Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,1,0
+Charlotte-Vancouver,"['Charlotte', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,0,1
+Charlotte-LosAngeles,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",2,1,1
+Charlotte-SanFrancisco,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,0,1
+Charlotte-LasVegas,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+Charlotte-SaltLakeCity,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+Charlotte-ElPaso,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,1,0
+Charlotte-Dallas,"['Charlotte', 'Nashville', 'Memphis', 'Dallas']",1,0,1
+Charlotte-Houston,"['Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",1,1,1
+Charlotte-OklahomaCity,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'OklahomaCity']",2,0,0
+Charlotte-Minneapolis,"['Charlotte', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis']",0,1,1
+Charlotte-KansasCity,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity']",0,0,1
+Charlotte-Denver,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver']",0,0,1
+Charlotte-Chicago,"['Charlotte', 'Nashville', 'Indianapolis', 'Chicago']",3,1,2
+Charlotte-Indianapolis,"['Charlotte', 'Nashville', 'Indianapolis']",2,1,0
+Charlotte-Detroit,"['Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit']",0,0,2
+Charlotte-StLouis,"['Charlotte', 'Nashville', 'Memphis', 'StLouis']",2,1,0
+Charlotte-Nashville,"['Charlotte', 'Nashville']",0,0,1
+Charlotte-Cleveland,"['Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland']",0,1,1
+Charlotte-NewYork,"['Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",7,6,3
+Charlotte-Montreal,"['Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",0,0,1
+Charlotte-NewOrleans,"['Charlotte', 'Atlanta', 'NewOrleans']",1,0,1
+Charlotte-Boston,"['Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",0,1,1
+Charlotte-Atlanta,"['Charlotte', 'Atlanta']",2,2,3
+Charlotte-Miami,"['Charlotte', 'Tampa', 'Miami']",3,0,1
+Charlotte-WashingtonDC,"['Charlotte', 'WashingtonDC']",1,1,4
+Charlotte-Philadelphia,"['Charlotte', 'WashingtonDC', 'Philadelphia']",3,2,1
+Charlotte-Toronto,"['Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Toronto']",0,1,1
+Charlotte-Pittsburgh,"['Charlotte', 'WashingtonDC', 'Pittsburgh']",1,0,2
+Charlotte-Cincinnati,"['Charlotte', 'Nashville', 'Indianapolis', 'Cincinnati']",1,2,0
+Charlotte-Tampa,"['Charlotte', 'Tampa']",0,0,1
+Charlotte-Memphis,"['Charlotte', 'Nashville', 'Memphis']",1,1,0
+Charlotte-Winnipeg,"['Charlotte', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,0,1
+Charlotte-Calgary,"['Charlotte', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Charlotte-Seattle,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,0
+Charlotte-Portland,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Charlotte-Sacrameto,"['Charlotte', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,0,0
+Charlotte-Phoenix,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,0,1
+Charlotte-SanDiego,"['Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",1,1,0
+NewOrleans-Vancouver,"['NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",1,0,0
+NewOrleans-LosAngeles,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",4,0,2
+NewOrleans-SanFrancisco,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",0,2,0
+NewOrleans-LasVegas,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas']",1,0,0
+NewOrleans-SaltLakeCity,"['NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity']",1,0,0
+NewOrleans-ElPaso,"['NewOrleans', 'Houston', 'ElPaso']",1,0,0
+NewOrleans-Dallas,"['NewOrleans', 'Houston', 'Dallas']",0,3,1
+NewOrleans-Houston,"['NewOrleans', 'Houston']",1,6,0
+NewOrleans-OklahomaCity,"['NewOrleans', 'Houston', 'Dallas', 'OklahomaCity']",0,0,1
+NewOrleans-Minneapolis,"['NewOrleans', 'Memphis', 'StLouis', 'Chicago', 'Minneapolis']",0,0,1
+NewOrleans-KansasCity,"['NewOrleans', 'Memphis', 'StLouis', 'KansasCity']",0,0,1
+NewOrleans-Denver,"['NewOrleans', 'Houston', 'Dallas', 'Denver']",2,0,0
+NewOrleans-Chicago,"['NewOrleans', 'Memphis', 'StLouis', 'Chicago']",0,2,2
+NewOrleans-Indianapolis,"['NewOrleans', 'Memphis', 'Nashville', 'Indianapolis']",0,0,1
+NewOrleans-Detroit,"['NewOrleans', 'Memphis', 'StLouis', 'Chicago', 'Detroit']",0,1,1
+NewOrleans-StLouis,"['NewOrleans', 'Memphis', 'StLouis']",0,2,0
+NewOrleans-Nashville,"['NewOrleans', 'Memphis', 'Nashville']",0,0,1
+NewOrleans-Cleveland,"['NewOrleans', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,2,0
+NewOrleans-NewYork,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",3,2,2
+NewOrleans-Montreal,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",0,1,0
+NewOrleans-Charlotte,"['NewOrleans', 'Atlanta', 'Charlotte']",2,0,0
+NewOrleans-Boston,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",0,0,1
+NewOrleans-Atlanta,"['NewOrleans', 'Atlanta']",1,0,2
+NewOrleans-Miami,"['NewOrleans', 'Miami']",1,1,1
+NewOrleans-WashingtonDC,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC']",1,1,1
+NewOrleans-Philadelphia,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia']",0,1,1
+NewOrleans-Toronto,"['NewOrleans', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+NewOrleans-Pittsburgh,"['NewOrleans', 'Atlanta', 'Charlotte', 'WashingtonDC', 'Pittsburgh']",0,0,1
+NewOrleans-Cincinnati,"['NewOrleans', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",0,0,1
+NewOrleans-Tampa,"['NewOrleans', 'Atlanta', 'Tampa']",0,0,1
+NewOrleans-Memphis,"['NewOrleans', 'Memphis']",0,1,1
+NewOrleans-Winnipeg,"['NewOrleans', 'Memphis', 'StLouis', 'Chicago', 'Minneapolis', 'Winnipeg']",1,0,0
+NewOrleans-Calgary,"['NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Calgary']",1,0,0
+NewOrleans-Seattle,"['NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,0
+NewOrleans-Portland,"['NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+NewOrleans-Sacrameto,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto']",1,0,0
+NewOrleans-Phoenix,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix']",0,0,1
+NewOrleans-SanDiego,"['NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'SanDiego']",1,1,0
+Boston-Vancouver,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",3,1,0
+Boston-LosAngeles,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",6,2,4
+Boston-SanFrancisco,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",4,2,1
+Boston-LasVegas,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,0,1
+Boston-SaltLakeCity,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Boston-ElPaso,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,1,0
+Boston-Dallas,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas']",5,2,1
+Boston-Houston,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",1,0,3
+Boston-OklahomaCity,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",0,0,1
+Boston-Minneapolis,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",3,2,1
+Boston-KansasCity,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",3,1,0
+Boston-Denver,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",1,2,0
+Boston-Chicago,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago']",4,7,5
+Boston-Indianapolis,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis']",1,3,0
+Boston-Detroit,"['Boston', 'NewYork', 'Cleveland', 'Detroit']",4,4,4
+Boston-StLouis,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",2,2,1
+Boston-Nashville,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville']",1,2,0
+Boston-Cleveland,"['Boston', 'NewYork', 'Cleveland']",4,3,2
+Boston-NewYork,"['Boston', 'NewYork']",55,55,52
+Boston-Montreal,"['Boston', 'Montreal']",6,7,6
+Boston-Charlotte,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte']",0,1,1
+Boston-NewOrleans,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",0,0,1
+Boston-Atlanta,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta']",6,2,2
+Boston-Miami,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",2,0,3
+Boston-WashingtonDC,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC']",15,12,5
+Boston-Philadelphia,"['Boston', 'NewYork', 'Philadelphia']",13,8,10
+Boston-Toronto,"['Boston', 'NewYork', 'Toronto']",4,5,5
+Boston-Pittsburgh,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Pittsburgh']",5,2,2
+Boston-Cincinnati,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati']",4,2,1
+Boston-Tampa,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa']",1,1,1
+Boston-Memphis,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis']",0,0,1
+Boston-Winnipeg,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,0,1
+Boston-Calgary,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Boston-Seattle,"['Boston', 'NewYork', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,0,2
+Boston-Portland,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",1,1,1
+Boston-Sacrameto,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",3,0,0
+Boston-Phoenix,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,1,1
+Boston-SanDiego,"['Boston', 'NewYork', 'Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",1,0,0
+Boston-SanDiego,"['Boston', 'NewYork', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",1,2,0
+Atlanta-Vancouver,"['Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,0,1
+Atlanta-LosAngeles,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",3,4,4
+Atlanta-SanFrancisco,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",1,2,2
+Atlanta-LasVegas,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+Atlanta-SaltLakeCity,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Atlanta-ElPaso,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,1,0
+Atlanta-Dallas,"['Atlanta', 'Nashville', 'Memphis', 'Dallas']",1,2,4
+Atlanta-Houston,"['Atlanta', 'NewOrleans', 'Houston']",3,4,2
+Atlanta-OklahomaCity,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'OklahomaCity']",1,2,0
+Atlanta-Minneapolis,"['Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis']",1,1,2
+Atlanta-KansasCity,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity']",0,0,2
+Atlanta-Denver,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver']",2,0,1
+Atlanta-Chicago,"['Atlanta', 'Nashville', 'Indianapolis', 'Chicago']",6,3,7
+Atlanta-Indianapolis,"['Atlanta', 'Nashville', 'Indianapolis']",0,1,3
+Atlanta-Detroit,"['Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit']",0,2,5
+Atlanta-StLouis,"['Atlanta', 'Nashville', 'Memphis', 'StLouis']",3,3,2
+Atlanta-Nashville,"['Atlanta', 'Nashville']",3,2,3
+Atlanta-Cleveland,"['Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,2,2
+Atlanta-NewYork,"['Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",8,13,10
+Atlanta-Montreal,"['Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",3,1,1
+Atlanta-Charlotte,"['Atlanta', 'Charlotte']",2,2,3
+Atlanta-NewOrleans,"['Atlanta', 'NewOrleans']",3,0,2
+Atlanta-Boston,"['Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",3,3,2
+Atlanta-Miami,"['Atlanta', 'Tampa', 'Miami']",2,8,2
+Atlanta-WashingtonDC,"['Atlanta', 'Charlotte', 'WashingtonDC']",7,5,5
+Atlanta-Philadelphia,"['Atlanta', 'Charlotte', 'WashingtonDC', 'Philadelphia']",4,3,4
+Atlanta-Toronto,"['Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Detroit', 'Toronto']",0,2,4
+Atlanta-Pittsburgh,"['Atlanta', 'Charlotte', 'WashingtonDC', 'Pittsburgh']",4,3,1
+Atlanta-Cincinnati,"['Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati']",0,3,2
+Atlanta-Tampa,"['Atlanta', 'Tampa']",2,5,1
+Atlanta-Memphis,"['Atlanta', 'Nashville', 'Memphis']",1,1,2
+Atlanta-Winnipeg,"['Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Atlanta-Calgary,"['Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Atlanta-Seattle,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,1,1
+Atlanta-Portland,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Atlanta-Sacrameto,"['Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,0,1
+Atlanta-Phoenix,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,1,2
+Atlanta-SanDiego,"['Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,1,1
+Miami-Vancouver,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,0,1
+Miami-LosAngeles,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",2,6,3
+Miami-SanFrancisco,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",1,1,2
+Miami-LasVegas,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas']",1,1,0
+Miami-SaltLakeCity,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity']",0,0,1
+Miami-ElPaso,"['Miami', 'NewOrleans', 'Houston', 'ElPaso']",0,1,0
+Miami-Dallas,"['Miami', 'NewOrleans', 'Houston', 'Dallas']",1,2,3
+Miami-Houston,"['Miami', 'NewOrleans', 'Houston']",2,5,1
+Miami-OklahomaCity,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'OklahomaCity']",0,0,1
+Miami-Minneapolis,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis']",0,0,2
+Miami-KansasCity,"['Miami', 'NewOrleans', 'Memphis', 'StLouis', 'KansasCity']",1,0,1
+Miami-Denver,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'Denver']",1,0,1
+Miami-Chicago,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago']",3,5,3
+Miami-Indianapolis,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis']",1,2,1
+Miami-Detroit,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit']",3,2,2
+Miami-StLouis,"['Miami', 'NewOrleans', 'Memphis', 'StLouis']",1,2,1
+Miami-Nashville,"['Miami', 'Tampa', 'Atlanta', 'Nashville']",1,0,1
+Miami-Cleveland,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland']",2,0,2
+Miami-NewYork,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",6,13,7
+Miami-Montreal,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",5,1,1
+Miami-Charlotte,"['Miami', 'Tampa', 'Charlotte']",1,1,1
+Miami-NewOrleans,"['Miami', 'NewOrleans']",2,1,1
+Miami-Boston,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",4,1,2
+Miami-Atlanta,"['Miami', 'Tampa', 'Atlanta']",6,5,2
+Miami-WashingtonDC,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC']",7,4,3
+Miami-Philadelphia,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia']",2,2,3
+Miami-Toronto,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Toronto']",1,0,3
+Miami-Pittsburgh,"['Miami', 'Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh']",3,1,1
+Miami-Cincinnati,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati']",0,0,2
+Miami-Tampa,"['Miami', 'Tampa']",13,9,2
+Miami-Memphis,"['Miami', 'NewOrleans', 'Memphis']",0,2,1
+Miami-Winnipeg,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Miami-Calgary,"['Miami', 'Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Miami-Seattle,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",1,0,1
+Miami-Portland,"['Miami', 'NewOrleans', 'Houston', 'Dallas', 'Denver', 'SaltLakeCity', 'Portland']",1,0,1
+Miami-Sacrameto,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'LasVegas', 'Sacrameto']",2,1,0
+Miami-Phoenix,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix']",0,1,1
+Miami-SanDiego,"['Miami', 'NewOrleans', 'Houston', 'ElPaso', 'Phoenix', 'SanDiego']",1,1,1
+WashingtonDC-Vancouver,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,2,1
+WashingtonDC-LosAngeles,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",6,3,7
+WashingtonDC-SanFrancisco,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",1,2,3
+WashingtonDC-LasVegas,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,0,1
+WashingtonDC-SaltLakeCity,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+WashingtonDC-ElPaso,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",1,0,1
+WashingtonDC-Dallas,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas']",2,6,2
+WashingtonDC-Houston,"['WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",7,1,3
+WashingtonDC-OklahomaCity,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",1,0,1
+WashingtonDC-Minneapolis,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",2,0,4
+WashingtonDC-KansasCity,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",1,2,1
+WashingtonDC-Denver,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",3,0,2
+WashingtonDC-Chicago,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago']",11,11,8
+WashingtonDC-Indianapolis,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis']",5,3,1
+WashingtonDC-Detroit,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit']",5,16,5
+WashingtonDC-StLouis,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",3,3,2
+WashingtonDC-Nashville,"['WashingtonDC', 'Charlotte', 'Nashville']",1,2,2
+WashingtonDC-Cleveland,"['WashingtonDC', 'Pittsburgh', 'Cleveland']",7,2,7
+WashingtonDC-NewYork,"['WashingtonDC', 'Philadelphia', 'NewYork']",53,62,66
+WashingtonDC-Montreal,"['WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",4,3,5
+WashingtonDC-Charlotte,"['WashingtonDC', 'Charlotte']",6,1,3
+WashingtonDC-NewOrleans,"['WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",2,0,1
+WashingtonDC-Boston,"['WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",8,2,12
+WashingtonDC-Atlanta,"['WashingtonDC', 'Charlotte', 'Atlanta']",4,2,7
+WashingtonDC-Miami,"['WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",1,2,5
+WashingtonDC-Philadelphia,"['WashingtonDC', 'Philadelphia']",33,30,31
+WashingtonDC-Toronto,"['WashingtonDC', 'Philadelphia', 'NewYork', 'Toronto']",9,7,8
+WashingtonDC-Pittsburgh,"['WashingtonDC', 'Pittsburgh']",20,12,3
+WashingtonDC-Cincinnati,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati']",8,2,3
+WashingtonDC-Tampa,"['WashingtonDC', 'Charlotte', 'Tampa']",3,2,2
+WashingtonDC-Memphis,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis']",1,0,2
+WashingtonDC-Winnipeg,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,0,1
+WashingtonDC-Calgary,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",3,0,0
+WashingtonDC-Seattle,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,1,2
+WashingtonDC-Portland,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",2,2,0
+WashingtonDC-Sacrameto,"['WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",3,1,0
+WashingtonDC-Phoenix,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",1,2,1
+WashingtonDC-SanDiego,"['WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",4,2,0
+Philadelphia-Vancouver,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",2,1,0
+Philadelphia-LosAngeles,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",3,5,4
+Philadelphia-SanFrancisco,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",3,3,1
+Philadelphia-LasVegas,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",3,0,0
+Philadelphia-SaltLakeCity,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Philadelphia-ElPaso,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,0,1
+Philadelphia-Dallas,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas']",0,3,3
+Philadelphia-Houston,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",3,2,2
+Philadelphia-OklahomaCity,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",0,1,1
+Philadelphia-Minneapolis,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",1,1,2
+Philadelphia-KansasCity,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",3,0,1
+Philadelphia-Denver,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",0,2,1
+Philadelphia-Chicago,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago']",7,9,5
+Philadelphia-Indianapolis,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis']",3,1,2
+Philadelphia-Detroit,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit']",2,5,7
+Philadelphia-StLouis,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",7,2,0
+Philadelphia-Nashville,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville']",1,2,1
+Philadelphia-Cleveland,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland']",12,1,3
+Philadelphia-NewYork,"['Philadelphia', 'NewYork']",100,151,160
+Philadelphia-Montreal,"['Philadelphia', 'NewYork', 'Boston', 'Montreal']",0,7,4
+Philadelphia-Charlotte,"['Philadelphia', 'WashingtonDC', 'Charlotte']",1,1,2
+Philadelphia-NewOrleans,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",0,0,2
+Philadelphia-Boston,"['Philadelphia', 'NewYork', 'Boston']",10,10,10
+Philadelphia-Atlanta,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Atlanta']",3,1,5
+Philadelphia-Miami,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",1,3,3
+Philadelphia-WashingtonDC,"['Philadelphia', 'WashingtonDC']",39,26,32
+Philadelphia-Toronto,"['Philadelphia', 'NewYork', 'Toronto']",4,3,9
+Philadelphia-Pittsburgh,"['Philadelphia', 'WashingtonDC', 'Pittsburgh']",9,5,3
+Philadelphia-Cincinnati,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati']",2,0,3
+Philadelphia-Tampa,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Tampa']",1,0,2
+Philadelphia-Memphis,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis']",1,1,1
+Philadelphia-Winnipeg,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Philadelphia-Calgary,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,1,0
+Philadelphia-Seattle,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,0,2
+Philadelphia-Portland,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",1,0,1
+Philadelphia-Sacrameto,"['Philadelphia', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,1,1
+Philadelphia-Phoenix,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",3,0,1
+Philadelphia-SanDiego,"['Philadelphia', 'WashingtonDC', 'Charlotte', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",1,1,1
+Toronto-Vancouver,"['Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",1,1,0
+Toronto-LosAngeles,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",5,5,3
+Toronto-SanFrancisco,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",2,0,2
+Toronto-LasVegas,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,1,0
+Toronto-SaltLakeCity,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,0,1
+Toronto-ElPaso,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso']",0,0,1
+Toronto-Dallas,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas']",3,3,1
+Toronto-Houston,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'Houston']",2,0,3
+Toronto-OklahomaCity,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'OklahomaCity']",1,0,1
+Toronto-Minneapolis,"['Toronto', 'Detroit', 'Chicago', 'Minneapolis']",1,2,2
+Toronto-KansasCity,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity']",3,1,1
+Toronto-Denver,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver']",2,0,1
+Toronto-Chicago,"['Toronto', 'Detroit', 'Chicago']",10,3,10
+Toronto-Indianapolis,"['Toronto', 'Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis']",4,1,1
+Toronto-Detroit,"['Toronto', 'Detroit']",8,14,9
+Toronto-StLouis,"['Toronto', 'Detroit', 'Chicago', 'StLouis']",0,1,3
+Toronto-Nashville,"['Toronto', 'Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville']",2,1,1
+Toronto-Cleveland,"['Toronto', 'Detroit', 'Cleveland']",6,6,6
+Toronto-NewYork,"['Toronto', 'NewYork']",19,23,22
+Toronto-Montreal,"['Toronto', 'Montreal']",2,4,5
+Toronto-Charlotte,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte']",0,0,2
+Toronto-NewOrleans,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'NewOrleans']",0,1,1
+Toronto-Boston,"['Toronto', 'NewYork', 'Boston']",8,6,4
+Toronto-Atlanta,"['Toronto', 'Detroit', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta']",1,3,3
+Toronto-Miami,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",1,3,2
+Toronto-WashingtonDC,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",3,9,9
+Toronto-Philadelphia,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",8,11,4
+Toronto-Pittsburgh,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh']",8,2,4
+Toronto-Cincinnati,"['Toronto', 'Detroit', 'Cleveland', 'Cincinnati']",6,2,1
+Toronto-Tampa,"['Toronto', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa']",2,1,1
+Toronto-Memphis,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis']",0,2,0
+Toronto-Winnipeg,"['Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Toronto-Calgary,"['Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,0,1
+Toronto-Seattle,"['Toronto', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",2,0,1
+Toronto-Portland,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,1
+Toronto-Sacrameto,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",1,0,1
+Toronto-Phoenix,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",1,2,1
+Toronto-SanDiego,"['Toronto', 'Detroit', 'Chicago', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,0,1
+Pittsburgh-Vancouver,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",2,0,0
+Pittsburgh-LosAngeles,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",1,5,1
+Pittsburgh-SanFrancisco,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,0,2
+Pittsburgh-LasVegas,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",1,0,1
+Pittsburgh-SaltLakeCity,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Pittsburgh-ElPaso,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,1,0
+Pittsburgh-Dallas,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas']",3,2,0
+Pittsburgh-Houston,"['Pittsburgh', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans', 'Houston']",2,3,0
+Pittsburgh-OklahomaCity,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",0,1,0
+Pittsburgh-Minneapolis,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis']",0,1,1
+Pittsburgh-KansasCity,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",3,1,0
+Pittsburgh-Denver,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",0,0,1
+Pittsburgh-Chicago,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago']",4,3,5
+Pittsburgh-Indianapolis,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis']",0,2,1
+Pittsburgh-Detroit,"['Pittsburgh', 'Cleveland', 'Detroit']",2,7,5
+Pittsburgh-StLouis,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis']",0,0,2
+Pittsburgh-Nashville,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville']",0,1,1
+Pittsburgh-Cleveland,"['Pittsburgh', 'Cleveland']",3,3,8
+Pittsburgh-NewYork,"['Pittsburgh', 'WashingtonDC', 'Philadelphia', 'NewYork']",9,15,12
+Pittsburgh-Montreal,"['Pittsburgh', 'Cleveland', 'Detroit', 'Toronto', 'Montreal']",0,0,3
+Pittsburgh-Charlotte,"['Pittsburgh', 'WashingtonDC', 'Charlotte']",4,1,0
+Pittsburgh-NewOrleans,"['Pittsburgh', 'WashingtonDC', 'Charlotte', 'Atlanta', 'NewOrleans']",0,1,0
+Pittsburgh-Boston,"['Pittsburgh', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",1,2,3
+Pittsburgh-Atlanta,"['Pittsburgh', 'WashingtonDC', 'Charlotte', 'Atlanta']",4,3,1
+Pittsburgh-Miami,"['Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa', 'Miami']",0,2,1
+Pittsburgh-WashingtonDC,"['Pittsburgh', 'WashingtonDC']",7,7,9
+Pittsburgh-Philadelphia,"['Pittsburgh', 'WashingtonDC', 'Philadelphia']",5,7,3
+Pittsburgh-Toronto,"['Pittsburgh', 'Cleveland', 'Detroit', 'Toronto']",3,7,3
+Pittsburgh-Cincinnati,"['Pittsburgh', 'Cleveland', 'Cincinnati']",5,3,0
+Pittsburgh-Tampa,"['Pittsburgh', 'WashingtonDC', 'Charlotte', 'Tampa']",1,2,0
+Pittsburgh-Memphis,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis']",0,0,1
+Pittsburgh-Winnipeg,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Pittsburgh-Calgary,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Pittsburgh-Seattle,"['Pittsburgh', 'Cleveland', 'Detroit', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,2,0
+Pittsburgh-Portland,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+Pittsburgh-Sacrameto,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+Pittsburgh-Phoenix,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",2,0,1
+Pittsburgh-SanDiego,"['Pittsburgh', 'Cleveland', 'Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,1,1
+Cincinnati-Vancouver,"['Cincinnati', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",0,1,0
+Cincinnati-LosAngeles,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",2,3,1
+Cincinnati-SanFrancisco,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",1,0,1
+Cincinnati-LasVegas,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'LasVegas']",0,0,1
+Cincinnati-SaltLakeCity,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Cincinnati-ElPaso,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,1,0
+Cincinnati-Dallas,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas']",2,2,1
+Cincinnati-Houston,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'Houston']",4,2,0
+Cincinnati-OklahomaCity,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'OklahomaCity']",1,0,1
+Cincinnati-Minneapolis,"['Cincinnati', 'Indianapolis', 'Chicago', 'Minneapolis']",0,1,1
+Cincinnati-KansasCity,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity']",0,1,1
+Cincinnati-Denver,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver']",1,1,0
+Cincinnati-Chicago,"['Cincinnati', 'Indianapolis', 'Chicago']",2,5,8
+Cincinnati-Indianapolis,"['Cincinnati', 'Indianapolis']",5,3,4
+Cincinnati-Detroit,"['Cincinnati', 'Cleveland', 'Detroit']",3,2,5
+Cincinnati-StLouis,"['Cincinnati', 'Indianapolis', 'StLouis']",2,4,0
+Cincinnati-Nashville,"['Cincinnati', 'Indianapolis', 'Nashville']",3,1,1
+Cincinnati-Cleveland,"['Cincinnati', 'Cleveland']",2,0,4
+Cincinnati-NewYork,"['Cincinnati', 'Cleveland', 'NewYork']",6,6,6
+Cincinnati-Montreal,"['Cincinnati', 'Cleveland', 'Detroit', 'Toronto', 'Montreal']",1,1,1
+Cincinnati-Charlotte,"['Cincinnati', 'Indianapolis', 'Nashville', 'Charlotte']",1,0,1
+Cincinnati-NewOrleans,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'NewOrleans']",1,1,0
+Cincinnati-Boston,"['Cincinnati', 'Cleveland', 'NewYork', 'Boston']",1,0,2
+Cincinnati-Atlanta,"['Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta']",3,3,2
+Cincinnati-Miami,"['Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",1,1,1
+Cincinnati-WashingtonDC,"['Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",6,2,3
+Cincinnati-Philadelphia,"['Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",1,0,3
+Cincinnati-Toronto,"['Cincinnati', 'Cleveland', 'Detroit', 'Toronto']",0,2,3
+Cincinnati-Pittsburgh,"['Cincinnati', 'Cleveland', 'Pittsburgh']",0,2,2
+Cincinnati-Tampa,"['Cincinnati', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",1,1,1
+Cincinnati-Memphis,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis']",2,1,0
+Cincinnati-Winnipeg,"['Cincinnati', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",1,0,0
+Cincinnati-Calgary,"['Cincinnati', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,0,1
+Cincinnati-Seattle,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",1,0,1
+Cincinnati-Portland,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,0,1
+Cincinnati-Sacrameto,"['Cincinnati', 'Indianapolis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+Cincinnati-Phoenix,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",3,0,0
+Cincinnati-SanDiego,"['Cincinnati', 'Indianapolis', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,0,1
+Tampa-Vancouver,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary', 'Vancouver']",2,0,0
+Tampa-LosAngeles,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",2,5,1
+Tampa-SanFrancisco,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",2,0,1
+Tampa-LasVegas,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+Tampa-SaltLakeCity,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",0,1,0
+Tampa-ElPaso,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso']",0,1,0
+Tampa-Dallas,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas']",1,0,2
+Tampa-Houston,"['Tampa', 'Atlanta', 'NewOrleans', 'Houston']",0,2,2
+Tampa-OklahomaCity,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'OklahomaCity']",0,1,0
+Tampa-Minneapolis,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis']",2,1,0
+Tampa-KansasCity,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity']",0,1,1
+Tampa-Denver,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver']",0,1,1
+Tampa-Chicago,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago']",6,2,1
+Tampa-Indianapolis,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis']",0,0,1
+Tampa-Detroit,"['Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland', 'Detroit']",1,2,1
+Tampa-StLouis,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis']",3,1,0
+Tampa-Nashville,"['Tampa', 'Atlanta', 'Nashville']",2,1,0
+Tampa-Cleveland,"['Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh', 'Cleveland']",3,0,1
+Tampa-NewYork,"['Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",2,8,3
+Tampa-Montreal,"['Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston', 'Montreal']",1,0,1
+Tampa-Charlotte,"['Tampa', 'Charlotte']",0,1,1
+Tampa-NewOrleans,"['Tampa', 'Atlanta', 'NewOrleans']",0,0,1
+Tampa-Boston,"['Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",1,1,1
+Tampa-Atlanta,"['Tampa', 'Atlanta']",3,3,2
+Tampa-Miami,"['Tampa', 'Miami']",6,6,5
+Tampa-WashingtonDC,"['Tampa', 'Charlotte', 'WashingtonDC']",1,2,2
+Tampa-Philadelphia,"['Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia']",3,1,1
+Tampa-Toronto,"['Tampa', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Toronto']",0,0,2
+Tampa-Pittsburgh,"['Tampa', 'Charlotte', 'WashingtonDC', 'Pittsburgh']",0,1,1
+Tampa-Cincinnati,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Cincinnati']",0,2,0
+Tampa-Memphis,"['Tampa', 'Atlanta', 'Nashville', 'Memphis']",0,0,1
+Tampa-Winnipeg,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Tampa-Calgary,"['Tampa', 'Atlanta', 'Nashville', 'Indianapolis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",0,1,0
+Tampa-Seattle,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",1,1,0
+Tampa-Portland,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",0,1,0
+Tampa-Sacrameto,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,0,1
+Tampa-Phoenix,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,0,1
+Tampa-SanDiego,"['Tampa', 'Atlanta', 'Nashville', 'Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",2,0,1
+Memphis-Vancouver,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",0,0,1
+Memphis-LosAngeles,"['Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego', 'LosAngeles']",0,0,2
+Memphis-SanFrancisco,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto', 'SanFrancisco']",0,2,0
+Memphis-LasVegas,"['Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'LasVegas']",0,0,1
+Memphis-SaltLakeCity,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity']",1,0,0
+Memphis-ElPaso,"['Memphis', 'Dallas', 'ElPaso']",0,0,1
+Memphis-Dallas,"['Memphis', 'Dallas']",1,2,1
+Memphis-Houston,"['Memphis', 'Dallas', 'Houston']",2,0,2
+Memphis-OklahomaCity,"['Memphis', 'Dallas', 'OklahomaCity']",1,1,0
+Memphis-Minneapolis,"['Memphis', 'StLouis', 'Chicago', 'Minneapolis']",2,0,1
+Memphis-KansasCity,"['Memphis', 'StLouis', 'KansasCity']",0,1,1
+Memphis-Denver,"['Memphis', 'StLouis', 'KansasCity', 'Denver']",2,0,0
+Memphis-Chicago,"['Memphis', 'StLouis', 'Chicago']",5,2,1
+Memphis-Indianapolis,"['Memphis', 'Nashville', 'Indianapolis']",3,1,0
+Memphis-Detroit,"['Memphis', 'StLouis', 'Chicago', 'Detroit']",1,0,2
+Memphis-StLouis,"['Memphis', 'StLouis']",1,4,0
+Memphis-Nashville,"['Memphis', 'Nashville']",0,1,1
+Memphis-Cleveland,"['Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,0,1
+Memphis-NewYork,"['Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",6,3,1
+Memphis-Montreal,"['Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",1,1,0
+Memphis-Charlotte,"['Memphis', 'Nashville', 'Charlotte']",1,0,1
+Memphis-NewOrleans,"['Memphis', 'NewOrleans']",0,0,1
+Memphis-Boston,"['Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",3,0,1
+Memphis-Atlanta,"['Memphis', 'Nashville', 'Atlanta']",2,1,2
+Memphis-Miami,"['Memphis', 'NewOrleans', 'Miami']",0,1,1
+Memphis-WashingtonDC,"['Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",0,1,2
+Memphis-Philadelphia,"['Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",1,1,1
+Memphis-Toronto,"['Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+Memphis-Pittsburgh,"['Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",1,1,0
+Memphis-Cincinnati,"['Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",0,2,0
+Memphis-Tampa,"['Memphis', 'Nashville', 'Atlanta', 'Tampa']",1,1,0
+Memphis-Winnipeg,"['Memphis', 'StLouis', 'Chicago', 'Minneapolis', 'Winnipeg']",0,1,0
+Memphis-Calgary,"['Memphis', 'StLouis', 'Chicago', 'Minneapolis', 'Winnipeg', 'Calgary']",1,0,0
+Memphis-Seattle,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland', 'Seattle']",0,0,1
+Memphis-Portland,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Portland']",1,0,0
+Memphis-Sacrameto,"['Memphis', 'StLouis', 'KansasCity', 'Denver', 'SaltLakeCity', 'Sacrameto']",0,1,0
+Memphis-Phoenix,"['Memphis', 'Dallas', 'ElPaso', 'Phoenix']",0,0,1
+Memphis-SanDiego,"['Memphis', 'Dallas', 'ElPaso', 'Phoenix', 'SanDiego']",0,0,1
+Winnipeg-Vancouver,"['Winnipeg', 'Calgary', 'Vancouver']",0,0,1
+Winnipeg-LosAngeles,"['Winnipeg', 'Calgary', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",1,0,1
+Winnipeg-SanFrancisco,"['Winnipeg', 'Calgary', 'Vancouver', 'Seattle', 'Portland', 'SanFrancisco']",0,1,0
+Winnipeg-LasVegas,"['Winnipeg', 'Calgary', 'SaltLakeCity', 'LasVegas']",0,0,1
+Winnipeg-SaltLakeCity,"['Winnipeg', 'Calgary', 'SaltLakeCity']",0,1,0
+Winnipeg-ElPaso,"['Winnipeg', 'Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas', 'ElPaso']",0,0,1
+Winnipeg-Dallas,"['Winnipeg', 'Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas']",0,1,0
+Winnipeg-Houston,"['Winnipeg', 'Minneapolis', 'KansasCity', 'OklahomaCity', 'Dallas', 'Houston']",1,0,1
+Winnipeg-OklahomaCity,"['Winnipeg', 'Minneapolis', 'KansasCity', 'OklahomaCity']",1,0,0
+Winnipeg-Minneapolis,"['Winnipeg', 'Minneapolis']",0,0,1
+Winnipeg-KansasCity,"['Winnipeg', 'Minneapolis', 'KansasCity']",1,0,0
+Winnipeg-Denver,"['Winnipeg', 'Minneapolis', 'KansasCity', 'Denver']",1,1,0
+Winnipeg-Chicago,"['Winnipeg', 'Minneapolis', 'Chicago']",0,1,1
+Winnipeg-Indianapolis,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis']",0,1,0
+Winnipeg-Detroit,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit']",2,1,0
+Winnipeg-StLouis,"['Winnipeg', 'Minneapolis', 'Chicago', 'StLouis']",1,1,0
+Winnipeg-Nashville,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville']",0,1,0
+Winnipeg-Cleveland,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland']",0,0,1
+Winnipeg-NewYork,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork']",3,2,0
+Winnipeg-Montreal,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,1
+Winnipeg-Charlotte,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Charlotte']",0,0,1
+Winnipeg-NewOrleans,"['Winnipeg', 'Minneapolis', 'Chicago', 'StLouis', 'Memphis', 'NewOrleans']",1,0,0
+Winnipeg-Boston,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",0,1,0
+Winnipeg-Atlanta,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta']",0,1,0
+Winnipeg-Miami,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",0,1,0
+Winnipeg-WashingtonDC,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",0,0,1
+Winnipeg-Philadelphia,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",2,0,0
+Winnipeg-Toronto,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+Winnipeg-Pittsburgh,"['Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",0,0,1
+Winnipeg-Cincinnati,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Cincinnati']",1,0,0
+Winnipeg-Tampa,"['Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",1,0,0
+Winnipeg-Memphis,"['Winnipeg', 'Minneapolis', 'Chicago', 'StLouis', 'Memphis']",0,0,1
+Winnipeg-Calgary,"['Winnipeg', 'Calgary']",1,0,0
+Winnipeg-Seattle,"['Winnipeg', 'Calgary', 'Vancouver', 'Seattle']",0,1,0
+Winnipeg-Portland,"['Winnipeg', 'Calgary', 'Vancouver', 'Seattle', 'Portland']",0,1,0
+Winnipeg-Sacrameto,"['Winnipeg', 'Calgary', 'SaltLakeCity', 'Sacrameto']",1,0,0
+Winnipeg-Phoenix,"['Winnipeg', 'Calgary', 'SaltLakeCity', 'LasVegas', 'Phoenix']",0,1,0
+Winnipeg-SanDiego,"['Winnipeg', 'Calgary', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",1,0,0
+Calgary-Vancouver,"['Calgary', 'Vancouver']",0,0,1
+Calgary-LosAngeles,"['Calgary', 'SaltLakeCity', 'LasVegas', 'LosAngeles']",2,1,1
+Calgary-SanFrancisco,"['Calgary', 'Vancouver', 'Seattle', 'Portland', 'SanFrancisco']",2,1,0
+Calgary-LasVegas,"['Calgary', 'SaltLakeCity', 'LasVegas']",0,1,0
+Calgary-SaltLakeCity,"['Calgary', 'SaltLakeCity']",1,0,0
+Calgary-ElPaso,"['Calgary', 'SaltLakeCity', 'LasVegas', 'Phoenix', 'ElPaso']",1,0,0
+Calgary-Dallas,"['Calgary', 'SaltLakeCity', 'Denver', 'Dallas']",0,0,1
+Calgary-Houston,"['Calgary', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston']",0,0,1
+Calgary-OklahomaCity,"['Calgary', 'Winnipeg', 'Minneapolis', 'KansasCity', 'OklahomaCity']",0,1,0
+Calgary-Minneapolis,"['Calgary', 'Winnipeg', 'Minneapolis']",2,0,0
+Calgary-KansasCity,"['Calgary', 'Winnipeg', 'Minneapolis', 'KansasCity']",1,0,0
+Calgary-Denver,"['Calgary', 'SaltLakeCity', 'Denver']",0,0,1
+Calgary-Chicago,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago']",0,0,1
+Calgary-Indianapolis,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis']",0,1,0
+Calgary-Detroit,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit']",1,0,1
+Calgary-StLouis,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'StLouis']",0,0,1
+Calgary-Nashville,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville']",0,0,1
+Calgary-Cleveland,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland']",0,0,1
+Calgary-NewYork,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork']",0,0,2
+Calgary-Montreal,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+Calgary-Charlotte,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Charlotte']",0,1,0
+Calgary-NewOrleans,"['Calgary', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans']",0,0,1
+Calgary-Boston,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",0,0,1
+Calgary-Atlanta,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta']",0,0,1
+Calgary-Miami,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa', 'Miami']",1,0,1
+Calgary-WashingtonDC,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",0,1,1
+Calgary-Philadelphia,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,0,1
+Calgary-Toronto,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto']",0,0,1
+Calgary-Pittsburgh,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",1,0,0
+Calgary-Cincinnati,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Cincinnati']",1,0,0
+Calgary-Tampa,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Indianapolis', 'Nashville', 'Atlanta', 'Tampa']",0,0,1
+Calgary-Memphis,"['Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'StLouis', 'Memphis']",1,0,0
+Calgary-Winnipeg,"['Calgary', 'Winnipeg']",0,0,1
+Calgary-Seattle,"['Calgary', 'Vancouver', 'Seattle']",2,1,1
+Calgary-Portland,"['Calgary', 'Vancouver', 'Seattle', 'Portland']",2,0,0
+Calgary-Sacrameto,"['Calgary', 'SaltLakeCity', 'Sacrameto']",2,0,0
+Calgary-Phoenix,"['Calgary', 'SaltLakeCity', 'LasVegas', 'Phoenix']",2,0,0
+Calgary-SanDiego,"['Calgary', 'SaltLakeCity', 'LasVegas', 'LosAngeles', 'SanDiego']",0,1,0
+Seattle-Vancouver,"['Seattle', 'Vancouver']",9,3,5
+Seattle-LosAngeles,"['Seattle', 'Portland', 'SanFrancisco', 'LosAngeles']",5,8,4
+Seattle-SanFrancisco,"['Seattle', 'Portland', 'SanFrancisco']",2,3,4
+Seattle-LasVegas,"['Seattle', 'Portland', 'SaltLakeCity', 'LasVegas']",0,0,1
+Seattle-SaltLakeCity,"['Seattle', 'Portland', 'SaltLakeCity']",0,0,1
+Seattle-ElPaso,"['Seattle', 'Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix', 'ElPaso']",1,1,0
+Seattle-Dallas,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas']",0,0,2
+Seattle-Houston,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston']",2,0,1
+Seattle-OklahomaCity,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",2,0,0
+Seattle-Minneapolis,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis']",1,1,1
+Seattle-KansasCity,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity']",1,1,0
+Seattle-Denver,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver']",1,0,1
+Seattle-Chicago,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago']",0,3,2
+Seattle-Indianapolis,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",0,2,0
+Seattle-Detroit,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit']",2,1,1
+Seattle-StLouis,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",3,1,0
+Seattle-Nashville,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",0,0,1
+Seattle-Cleveland,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland']",1,0,1
+Seattle-NewYork,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork']",6,5,2
+Seattle-Montreal,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",1,0,1
+Seattle-Charlotte,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",0,1,0
+Seattle-NewOrleans,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans']",0,1,0
+Seattle-Boston,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'NewYork', 'Boston']",0,2,1
+Seattle-Atlanta,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",0,2,1
+Seattle-Miami,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",0,1,1
+Seattle-WashingtonDC,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,4,0
+Seattle-Philadelphia,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,1,1
+Seattle-Toronto,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Toronto']",4,0,1
+Seattle-Pittsburgh,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis', 'Chicago', 'Detroit', 'Cleveland', 'Pittsburgh']",0,0,1
+Seattle-Cincinnati,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",0,0,1
+Seattle-Tampa,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",2,1,0
+Seattle-Memphis,"['Seattle', 'Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",1,1,0
+Seattle-Winnipeg,"['Seattle', 'Vancouver', 'Calgary', 'Winnipeg']",0,0,1
+Seattle-Calgary,"['Seattle', 'Vancouver', 'Calgary']",0,0,2
+Seattle-Portland,"['Seattle', 'Portland']",9,10,1
+Seattle-Sacrameto,"['Seattle', 'Portland', 'SanFrancisco', 'Sacrameto']",0,2,1
+Seattle-Phoenix,"['Seattle', 'Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix']",1,1,1
+Seattle-SanDiego,"['Seattle', 'Portland', 'SanFrancisco', 'LosAngeles', 'SanDiego']",4,0,1
+Portland-Vancouver,"['Portland', 'Seattle', 'Vancouver']",4,2,1
+Portland-LosAngeles,"['Portland', 'SanFrancisco', 'LosAngeles']",4,2,4
+Portland-SanFrancisco,"['Portland', 'SanFrancisco']",3,0,3
+Portland-LasVegas,"['Portland', 'SaltLakeCity', 'LasVegas']",3,0,0
+Portland-SaltLakeCity,"['Portland', 'SaltLakeCity']",1,1,0
+Portland-ElPaso,"['Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix', 'ElPaso']",0,0,1
+Portland-Dallas,"['Portland', 'SaltLakeCity', 'Denver', 'Dallas']",2,0,1
+Portland-Houston,"['Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston']",0,0,1
+Portland-OklahomaCity,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",0,0,1
+Portland-Minneapolis,"['Portland', 'Seattle', 'Vancouver', 'Calgary', 'Winnipeg', 'Minneapolis']",0,0,1
+Portland-KansasCity,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity']",0,0,1
+Portland-Denver,"['Portland', 'SaltLakeCity', 'Denver']",0,0,1
+Portland-Chicago,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",0,2,1
+Portland-Indianapolis,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",1,0,1
+Portland-Detroit,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",1,0,1
+Portland-StLouis,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",1,0,1
+Portland-Nashville,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",0,0,1
+Portland-Cleveland,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",2,0,0
+Portland-NewYork,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",4,1,2
+Portland-Montreal,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+Portland-Charlotte,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",0,1,0
+Portland-NewOrleans,"['Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans']",1,0,0
+Portland-Boston,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",0,0,1
+Portland-Atlanta,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",0,1,1
+Portland-Miami,"['Portland', 'SaltLakeCity', 'Denver', 'Dallas', 'Houston', 'NewOrleans', 'Miami']",2,1,0
+Portland-WashingtonDC,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,0,1
+Portland-Philadelphia,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,2,0
+Portland-Toronto,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",1,1,0
+Portland-Pittsburgh,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,1,0
+Portland-Cincinnati,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",0,1,0
+Portland-Tampa,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,1,0
+Portland-Memphis,"['Portland', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",1,0,0
+Portland-Winnipeg,"['Portland', 'Seattle', 'Vancouver', 'Calgary', 'Winnipeg']",1,0,0
+Portland-Calgary,"['Portland', 'Seattle', 'Vancouver', 'Calgary']",0,0,1
+Portland-Seattle,"['Portland', 'Seattle']",7,3,5
+Portland-Sacrameto,"['Portland', 'SanFrancisco', 'Sacrameto']",1,1,1
+Portland-Phoenix,"['Portland', 'SaltLakeCity', 'LasVegas', 'Phoenix']",0,1,1
+Portland-SanDiego,"['Portland', 'SanFrancisco', 'LosAngeles', 'SanDiego']",0,2,0
+Sacrameto-Vancouver,"['Sacrameto', 'SanFrancisco', 'Portland', 'Seattle', 'Vancouver']",0,0,1
+Sacrameto-LosAngeles,"['Sacrameto', 'SanFrancisco', 'LosAngeles']",5,4,9
+Sacrameto-SanFrancisco,"['Sacrameto', 'SanFrancisco']",13,17,18
+Sacrameto-LasVegas,"['Sacrameto', 'LasVegas']",1,2,0
+Sacrameto-SaltLakeCity,"['Sacrameto', 'SaltLakeCity']",0,1,0
+Sacrameto-ElPaso,"['Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso']",0,0,1
+Sacrameto-Dallas,"['Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Dallas']",0,0,2
+Sacrameto-Houston,"['Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston']",0,2,0
+Sacrameto-OklahomaCity,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'OklahomaCity']",0,0,1
+Sacrameto-Minneapolis,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",0,1,1
+Sacrameto-KansasCity,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity']",0,0,1
+Sacrameto-Denver,"['Sacrameto', 'SaltLakeCity', 'Denver']",1,2,0
+Sacrameto-Chicago,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",1,0,2
+Sacrameto-Indianapolis,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis']",0,0,1
+Sacrameto-Detroit,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",0,0,1
+Sacrameto-StLouis,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",0,1,0
+Sacrameto-Nashville,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville']",0,1,0
+Sacrameto-Cleveland,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,1,0
+Sacrameto-NewYork,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork']",3,1,2
+Sacrameto-Montreal,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,1,0
+Sacrameto-Charlotte,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Charlotte']",0,0,1
+Sacrameto-NewOrleans,"['Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",0,1,0
+Sacrameto-Boston,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'NewYork', 'Boston']",1,1,0
+Sacrameto-Atlanta,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta']",1,1,0
+Sacrameto-Miami,"['Sacrameto', 'LasVegas', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",1,1,0
+Sacrameto-WashingtonDC,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC']",1,0,1
+Sacrameto-Philadelphia,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh', 'WashingtonDC', 'Philadelphia']",0,0,1
+Sacrameto-Toronto,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",2,0,1
+Sacrameto-Pittsburgh,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+Sacrameto-Cincinnati,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Indianapolis', 'Cincinnati']",0,0,1
+Sacrameto-Tampa,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",0,0,1
+Sacrameto-Memphis,"['Sacrameto', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Memphis']",0,1,0
+Sacrameto-Winnipeg,"['Sacrameto', 'SaltLakeCity', 'Calgary', 'Winnipeg']",0,1,0
+Sacrameto-Calgary,"['Sacrameto', 'SaltLakeCity', 'Calgary']",0,0,1
+Sacrameto-Seattle,"['Sacrameto', 'SanFrancisco', 'Portland', 'Seattle']",3,0,1
+Sacrameto-Portland,"['Sacrameto', 'SanFrancisco', 'Portland']",1,2,0
+Sacrameto-Phoenix,"['Sacrameto', 'LasVegas', 'Phoenix']",0,0,2
+Sacrameto-SanDiego,"['Sacrameto', 'SanFrancisco', 'LosAngeles', 'SanDiego']",0,0,2
+Phoenix-Vancouver,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland', 'Seattle', 'Vancouver']",2,0,1
+Phoenix-LosAngeles,"['Phoenix', 'SanDiego', 'LosAngeles']",9,12,14
+Phoenix-SanFrancisco,"['Phoenix', 'LasVegas', 'Sacrameto', 'SanFrancisco']",2,4,3
+Phoenix-LasVegas,"['Phoenix', 'LasVegas']",1,1,3
+Phoenix-SaltLakeCity,"['Phoenix', 'LasVegas', 'SaltLakeCity']",0,0,1
+Phoenix-ElPaso,"['Phoenix', 'ElPaso']",2,1,0
+Phoenix-Dallas,"['Phoenix', 'ElPaso', 'Dallas']",3,3,1
+Phoenix-Houston,"['Phoenix', 'ElPaso', 'Houston']",0,3,1
+Phoenix-OklahomaCity,"['Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity']",1,0,1
+Phoenix-Minneapolis,"['Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity', 'KansasCity', 'Minneapolis']",4,1,0
+Phoenix-KansasCity,"['Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity', 'KansasCity']",1,0,1
+Phoenix-Denver,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Denver']",0,1,2
+Phoenix-Chicago,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago']",4,1,2
+Phoenix-Indianapolis,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis']",1,0,1
+Phoenix-Detroit,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit']",4,1,1
+Phoenix-StLouis,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'StLouis']",1,0,1
+Phoenix-Nashville,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville']",0,1,0
+Phoenix-Cleveland,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",0,1,1
+Phoenix-NewYork,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",4,9,1
+Phoenix-Montreal,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,1
+Phoenix-Charlotte,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",0,1,0
+Phoenix-NewOrleans,"['Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",1,1,0
+Phoenix-Boston,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",0,1,1
+Phoenix-Atlanta,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",3,2,0
+Phoenix-Miami,"['Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",1,1,1
+Phoenix-WashingtonDC,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",0,3,1
+Phoenix-Philadelphia,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",2,0,2
+Phoenix-Toronto,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",3,1,1
+Phoenix-Pittsburgh,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",0,0,1
+Phoenix-Cincinnati,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",0,0,1
+Phoenix-Tampa,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",1,2,0
+Phoenix-Memphis,"['Phoenix', 'ElPaso', 'Dallas', 'Memphis']",0,1,0
+Phoenix-Winnipeg,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Calgary', 'Winnipeg']",0,1,0
+Phoenix-Calgary,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Calgary']",1,1,0
+Phoenix-Seattle,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland', 'Seattle']",0,0,2
+Phoenix-Portland,"['Phoenix', 'LasVegas', 'SaltLakeCity', 'Portland']",0,0,1
+Phoenix-Sacrameto,"['Phoenix', 'LasVegas', 'Sacrameto']",0,0,2
+Phoenix-SanDiego,"['Phoenix', 'SanDiego']",1,0,5
+SanDiego-Vancouver,"['SanDiego', 'LosAngeles', 'SanFrancisco', 'Portland', 'Seattle', 'Vancouver']",3,0,0
+SanDiego-LosAngeles,"['SanDiego', 'LosAngeles']",43,48,41
+SanDiego-SanFrancisco,"['SanDiego', 'LosAngeles', 'SanFrancisco']",4,4,4
+SanDiego-LasVegas,"['SanDiego', 'LosAngeles', 'LasVegas']",0,1,2
+SanDiego-SaltLakeCity,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity']",1,1,0
+SanDiego-ElPaso,"['SanDiego', 'Phoenix', 'ElPaso']",0,1,0
+SanDiego-Dallas,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas']",2,1,1
+SanDiego-Houston,"['SanDiego', 'Phoenix', 'ElPaso', 'Houston']",2,0,2
+SanDiego-OklahomaCity,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'OklahomaCity']",1,0,1
+SanDiego-Minneapolis,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'Minneapolis']",0,0,1
+SanDiego-KansasCity,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity']",1,1,0
+SanDiego-Denver,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver']",1,0,1
+SanDiego-Chicago,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago']",3,2,1
+SanDiego-Indianapolis,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis']",0,0,1
+SanDiego-Detroit,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit']",0,3,0
+SanDiego-StLouis,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis']",0,0,1
+SanDiego-Nashville,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville']",0,0,1
+SanDiego-Cleveland,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland']",1,0,1
+SanDiego-NewYork,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork']",4,7,0
+SanDiego-Montreal,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto', 'Montreal']",0,0,1
+SanDiego-Charlotte,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte']",1,1,0
+SanDiego-NewOrleans,"['SanDiego', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans']",0,0,1
+SanDiego-Boston,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia', 'NewYork', 'Boston']",1,0,1
+SanDiego-Atlanta,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta']",1,0,1
+SanDiego-Miami,"['SanDiego', 'Phoenix', 'ElPaso', 'Houston', 'NewOrleans', 'Miami']",3,1,0
+SanDiego-WashingtonDC,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC']",5,0,1
+SanDiego-Philadelphia,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Charlotte', 'WashingtonDC', 'Philadelphia']",0,0,2
+SanDiego-Toronto,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Denver', 'KansasCity', 'StLouis', 'Chicago', 'Detroit', 'Toronto']",1,1,1
+SanDiego-Pittsburgh,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati', 'Cleveland', 'Pittsburgh']",1,0,1
+SanDiego-Cincinnati,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Indianapolis', 'Cincinnati']",0,1,0
+SanDiego-Tampa,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis', 'Nashville', 'Atlanta', 'Tampa']",1,0,1
+SanDiego-Memphis,"['SanDiego', 'Phoenix', 'ElPaso', 'Dallas', 'Memphis']",1,1,0
+SanDiego-Winnipeg,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Calgary', 'Winnipeg']",0,0,1
+SanDiego-Calgary,"['SanDiego', 'LosAngeles', 'LasVegas', 'SaltLakeCity', 'Calgary']",0,1,0
+SanDiego-Seattle,"['SanDiego', 'LosAngeles', 'SanFrancisco', 'Portland', 'Seattle']",0,1,1
+SanDiego-Portland,"['SanDiego', 'LosAngeles', 'SanFrancisco', 'Portland']",2,1,0
+SanDiego-Sacrameto,"['SanDiego', 'LosAngeles', 'SanFrancisco', 'Sacrameto']",4,0,1
+SanDiego-Phoenix,"['SanDiego', 'Phoenix']",3,3,3

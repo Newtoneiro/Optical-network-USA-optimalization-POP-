@@ -8,5 +8,6 @@ if __name__ == "__main__":
         data_loader.get_nodes(),
         data_loader.get_paths()
     )
-    ea = EvolutionalAlgorithm(model, data_loader.get_demands(), size=20)
+    ea = EvolutionalAlgorithm(model, data_loader.get_demands(), size=15)
     ea.run()
+    ea.save_result()
