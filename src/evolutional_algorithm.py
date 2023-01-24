@@ -79,7 +79,6 @@ class EvolutionalAlgorithm:
         selected_population, elite = self.selection(self.population)
         crossover_population = self.crossover(selected_population)
         mutated_population = self.mutation(crossover_population)
-        # mutated_population = self.mutation(selected_population)
         self.population = mutated_population
         # Add elite
         self.population.append(copy.deepcopy(elite))
@@ -165,29 +164,6 @@ class EvolutionalAlgorithm:
                             demand_transponders[
                                 transponder_to_change_to
                             ] += ratio
-            demand_transponders = mutated_individual.sum_transponders(
-                demand_id
-            )
-
-            mutated_demand_transponders = copy.deepcopy(demand_transponders)
-
-            for type in TRANSPONDERS:
-                if random.random() > TYPE_MUTATION_PROBABILITY:
-                    continue
-
-                number = mutated_demand_transponders[type]
-                if type == 100:
-                    if number >= 2:
-                        # 2x100 -> 1x200
-                        mutated_demand_transponders[100] -= 2
-                        mutated_demand_transponders[200] += 1
-                elif type == 200:
-                    # continue
-                    if random.random() > 0.5:  # convert to 400 or 100
-                        if number >= 2:
-                            # 2x200 -> 1x400
-                            mutated_demand_transponders[200] -= 2
-                            mutated_demand_transponders[400] += 1
                     else:
                         if demand_transponders[
                                 transponder_to_change] > int(1/ratio):
