@@ -2,6 +2,7 @@ from classes import Individual, Demand
 from model import Model
 from config.config import (
     TRANSPONDERS,
+    POPULATION_SIZE,
     INDIVIDUAL_MUTATION_PROBABILITY,
     DEMAND_MUTATION_PROBABILITY,
     CROSSOVER_PROBABILITY,
@@ -21,12 +22,23 @@ class EvolutionalAlgorithm:
     """
 
     def __init__(
-        self, base_model: Model, demands: list[Demand], size: int
+        self,
+        base_model: Model,
+        demands: list[Demand],
+        pop_size: int = POPULATION_SIZE,
+        cross_prob: float = CROSSOVER_PROBABILITY,
+        indiv_mut_prob: float = INDIVIDUAL_MUTATION_PROBABILITY,
+        demand_mut_prob: float = DEMAND_MUTATION_PROBABILITY,
+        epochs: int = NO_EPOCHS
     ) -> None:
-        self.population_size = size
+        self.population_size = pop_size
+        self.cross_prob = cross_prob
+        self.indiv_mut_prob = indiv_mut_prob
+        self.demands_mut_prob = demand_mut_prob
+        self.epochs = epochs
         self.base_model = base_model
         self.demands = demands
-        self.population = self.generate_base_population(size)
+        self.population = self.generate_base_population(pop_size)
 
     def generate_base_population(self, size: int) -> list[Individual]:
         """
@@ -56,20 +68,25 @@ class EvolutionalAlgorithm:
 
         return individual
 
-    def run(self) -> None:
+    def run(self, save_bests: bool = False) -> None:
         """
         Starts the algorithm
         """
         cur_epoch = 1
-        while cur_epoch <= NO_EPOCHS:
+        best_values = []
+        while cur_epoch <= self.epochs:
             self.step()
             # best_score = \
             #     min(self.population, key=lambda a: a.get_cost()).get_cost()
             scores = set([
                 individual.get_cost() for individual in self.population
                 ])
-            print(f"Epoch {cur_epoch}/{NO_EPOCHS}, best_score: {min(scores)}")
+            print(f"Epoch {cur_epoch}/{self.epochs}, best_score: {min(scores)}")
+            if (save_bests):
+                best_values.append(min(scores))
             cur_epoch += 1
+
+        return best_values
 
     def step(self) -> None:
         """
@@ -106,7 +123,7 @@ class EvolutionalAlgorithm:
         """
         crossover_population = []
         for individual in population:
-            if random.random() > CROSSOVER_PROBABILITY:
+            if random.random() > self.cross_prob:
                 crossover_population.append(individual)
                 continue
 
@@ -140,7 +157,7 @@ class EvolutionalAlgorithm:
         """
         mutated_population = []
         for individual in population:
-            if random.random() > INDIVIDUAL_MUTATION_PROBABILITY:
+            if random.random() > self.indiv_mut_prob:
                 mutated_population.append(individual)
                 continue
 
@@ -150,7 +167,7 @@ class EvolutionalAlgorithm:
                 demand_transponders = individual.sum_transponders(
                     demand_id
                 )
-                if random.random() < DEMAND_MUTATION_PROBABILITY:
+                if random.random() < self.demands_mut_prob:
                     # If mutation occured, change transponders
                     transponder_to_change = random.choice(TRANSPONDERS)
                     transponder_to_change_to = random.choice(
