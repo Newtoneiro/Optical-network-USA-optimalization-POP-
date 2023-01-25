@@ -59,7 +59,6 @@ class EvolutionalAlgorithm:
         individual_model = copy.deepcopy(self.base_model)
 
         for demand in self.demands:
-            # for now generating single connection
             genome = self.generate_demand_fulfillment(demand, individual_model)
             individual.append_demand(
                 demand_id=demand.id,
@@ -76,12 +75,10 @@ class EvolutionalAlgorithm:
         best_values = []
         while cur_epoch <= self.epochs:
             self.step()
-            # best_score = \
-            #     min(self.population, key=lambda a: a.get_cost()).get_cost()
             scores = set([
                 individual.get_cost() for individual in self.population
                 ])
-            print(f"Epoch {cur_epoch}/{self.epochs}, best_score: {min(scores)}")
+            print(f"Epoch {cur_epoch}/{self.epochs} best_score: {min(scores)}")
             if (save_bests):
                 best_values.append(min(scores))
             cur_epoch += 1
