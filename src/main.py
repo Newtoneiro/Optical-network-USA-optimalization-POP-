@@ -5,7 +5,7 @@ import random
 import matplotlib.pyplot as plt
 import os
 
-from config.config import SEED, NO_EPOCHS
+from config.config import SEED, NO_EPOCHS, DATA_PATH
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     if SEED != 0:
         random.seed(SEED)
 
-    data_loader = DataLoader("janos-us-ca.xml")
+    data_loader = DataLoader(f"{dir_path}/../{DATA_PATH}")
     demands = data_loader.get_demands()
     model = Model(
         data_loader.get_nodes(),
